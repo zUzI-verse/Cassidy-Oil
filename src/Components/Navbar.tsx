@@ -27,6 +27,11 @@ const Navbar = () => {
             </Link></li>
 
             <li>
+            <Link to="/alllubricants" className="text-[#002b36] font-semibold hover:text-[#002b36]">
+              Lubricants
+            </Link></li>
+
+            <li>
             <Link to="/contact" className="text-[#002b36] font-semibold hover:text-[#002b36]">
              Contact
             </Link></li>
@@ -55,6 +60,12 @@ const Navbar = () => {
             <Link to="/about us" className="text-[#002b36] font-semibold hover:text-[#002b36]">
              About Us 
             </Link></li>
+
+            <li>
+            <Link to="/AllLubricants" className="text-[#002b36] font-semibold hover:text-[#002b36]">
+              Lubricants
+            </Link></li>
+
 
             <li>
             <Link to="/contact" className="text-[#002b36] font-semibold hover:text-[#002b36]">
