@@ -1,4 +1,7 @@
 import { useState } from "react"
+// import {FrameA} from "../assets/FrameA.png"
+// import {FrameB} from "../assets/FrameB.png" 
+
 
 
 type Product = {
@@ -20,21 +23,51 @@ const categories =[
 const products: Product [] = [
      {
     id: 1,
-    name: "Cassidy Supreme Motor Oil 20W-50",
+    name: "Casstek Premium 4T 20W-40 Api SL/MA2",
     description: "Premium performance multigrade engine oil.",
-    image: "/images/oil1.png ",
+    image: "/src/assets/FrameB.png",
   },
   {
     id: 2,
     name: "Cassidy Synthetic Motor Oil 5W-30",
     description: "Advanced synthetic oil for petrol engines.",
-    image: "/images/oil2.png",
+    image: "/src/assets/FrameB.png",
   },
   {
     id: 3,
     name: "Cassidy Premium Diesel Engine Oil",
     description: "Formulated for diesel-powered vehicles.",
-    image: "/images/oil3.png",
+    image: "/src/assets/FrameB.png",
+  },
+  {
+    id: 4,
+    name: "Cassidy Heavy Duty Engine Oil",
+    description: "Designed for heavy-duty diesel engines.",
+    image: "/src/assets/FrameB.png",
+  },
+  {
+    id: 5,
+    name: "Cassidy Transmission Fluid",
+    description: "High-performance transmission fluid.",
+    image: "/src/assets/FrameB.png",
+  },
+  {
+    id: 6,
+    name: "Cassidy Bike Oil 10W-30",
+    description: "Specially formulated for motorcycles.",
+    image: "/src/assets/FrameB.png",
+  },
+  {
+    id: 7,
+    name: "Cassidy Petrol Engine Oil 10W-40",
+    description: "High-quality oil for petrol engines.",
+    image: "/src/assets/FrameB.png",
+  },
+  {
+    id: 8,
+    name: "Cassidy Synthetic Gear Oil",
+    description: "Synthetic oil for gear systems.",
+    image: "/src/assets/FrameB.png",
   },
   // Add more product objects here...
 ];
@@ -52,8 +85,8 @@ const AllLubricants = () => {
   return (
     <div>
       {/*Hero Banner*/}
-     <section className="relative bg-cover bg-center text-white p-32 mt-16 h-64 " style={{ backgroundImage: "url('/src/assets/bg 2 1.png')" }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
+      <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
         <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
       </div>
@@ -84,7 +117,7 @@ const AllLubricants = () => {
             <div  className="p-4">
               <h3 className="font-semibold text-lg">{product.name}</h3>
              <p className="text-gray-600 text-sm">{product.description}</p>
-            <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Learn More</button>
+            <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">See More</button>
           </div>
           </div>
         ))}
