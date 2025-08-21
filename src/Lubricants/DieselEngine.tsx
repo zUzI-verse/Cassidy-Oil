@@ -1,24 +1,46 @@
+
 import { Link } from "react-router-dom";
 
-const products = [
+
+
+
+const products  = [
   {
     id: 1,
-    name: "CASSTEX PREMIUM 4T 20W-40 API SL/JASO MA2",
-    description: "Premium Multigrade 4T Oil for Motorcycles.",
-    image: "/src/assets/FrameF.png",
+     name: "CASSTURBO HD SAE40 API CF/SF",
+    description: "Heavy duty Mono-grade mineral engine oil",
+    image: "/src/assets/FrameL.png",
   },
   {
     id: 2,
-    name: "CASSTEX MOTO 4T 20W-40 API SF/CC",
-    description: "High Performance Multigrade 4T Oil for Motorcycles.",
-    image: "/src/assets/FrameG.png",
+    name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
+    description: "Fleet multigrade diesel engine oil designed to provide superior performanc for trucks, buses, light commercial vehicle.",
+    image: "/src/assets/FrameK.png",
   },
+
+  {
+    id: 3,
+    name: "CASSTURBO HD ULTRA 15W40 CI-4",
+    description: "Long drain premium performance Multigrade diesel engine oil designed for modern heavy duty engine",
+    image: "/src/assets/FrameC.png",
+  },
+  {
+    id: 4,
+    name: "CASSTURBO HD FORCE 15W40 CH-4",
+    description: "Superior Performance Multigrade diesel engine oil designed with active protection",
+    image: "/src/assets/FrameB.png",
+  },
+
 ];
 
- const BikeOil = () =>{
+
+
+
+
+const DieselEngine= () => {
   return (
-    <div>
-       {/*Hero Banner*/}
+<div>
+     {/*Hero Banner*/}
      <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
@@ -32,26 +54,25 @@ const products = [
         <span className="mx-2">/</span>
         <a href="/lubricants" className="hover:text-orange-500">Lubricants</a>
         <span className="mx-2">/</span>
-        <span className="text-orange-500 font-medium">BikeOil</span>
+        <span className="text-orange-500 font-medium">Diesel Engine Oil</span>
       </div>
 
-
-      {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
-        <div className="flex gap-8">
-          {/* Sidebar */}
+       {/* Main Content */}
+           <main className="container mx-auto px-6 py-12">
+            <div className="flex gap-8">
+       {/* Sidebar */}
           <aside className="w-1/4">
             <ul className="space-y-3">
               <li><Link to="/lubricants" className="hover:text-orange-500">All</Link></li>
-              <li><Link to="/lubricants/bike-oils" className="text-orange-500 font-bold">Bike Oils</Link></li>
+              <li><Link to="/lubricants/bike-oils" className="hover:text-orange-500">Bike Oils</Link></li>
               <li><Link to="/lubricants/petrol-engine-oil" className="hover:text-orange-500">Petrol Engine Oil</Link></li>
-              <li><Link to="/lubricants/diesel-engine-oil" className="hover:text-orange-500">Diesel Engine Oil</Link></li>
+              <li><Link to="/lubricants/diesel-engine-oil" className="text-orange-500 font-bold">Diesel Engine Oil</Link></li>
               <li><Link to="/lubricants/transmission-oil" className="hover:text-orange-500">Transmission Oil</Link></li>
-              <li><Link to="/lubricants/heavy-duty-engine-oils" className="hover:text-orange-500">Heavy Duty Engine Oils</Link></li>
+              <li><Link to="/lubricants/heavy-duty-engine-oil" className="hover:text-orange-500">Heavy Duty Engine Oils</Link></li>
             </ul>
           </aside>
 
-          {/* Products */}
+             {/* Products */}
           <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-3/4">
             {products.map((product) => (
               <div
@@ -73,11 +94,11 @@ const products = [
               </div>
             ))}
           </section>
-        </div>
-      </main>
-    </div>
-  );
+  </div>
+ </main>
+</div>
+
+  )
 }
 
-
-export default BikeOil;
+export default DieselEngine;
