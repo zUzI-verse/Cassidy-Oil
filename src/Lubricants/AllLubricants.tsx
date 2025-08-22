@@ -1,7 +1,11 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
- import FrameF  from "../assets/FrameF.png";
- import {FrameB} from "../assets";
+import BgAuto from "../assets/BgAuto.png";
+ import { FrameA, FrameB, FrameC, FrameD, FrameE, FrameF,  FrameG, FrameH, FrameI, FrameJ, FrameK, FrameL, FrameM, FrameN, FrameO,  FrameQ, FrameR, FrameU, FrameV   } from "../assets";
+
+
+//  import FrameF  from "../assets/FrameF.png";
+
 
 
 
@@ -11,6 +15,7 @@ type Product = {
     name: string;
     description: string;
     image: string;
+    noButton?: boolean;
 }
 
 const categories = [
@@ -32,49 +37,49 @@ const products: Product [] = [
     id: 2,
     name: "CASSTEK MOTO 4T 20W-40 API SF/CF",
     description: "High Performance Multigrade Okada, Kekenapep engine oil",
-    image: "/src/assets/FrameG.png",
+    image: FrameG,
   },
   {
     id: 3,
     name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF",
     description: "Super Performance Multigrade designed with deposit guard technology",
-    image: "/src/assets/FrameE.png",
+    image: FrameE,
   },
   {
     id: 4,
     name: "CASSGOLD POWER MOTOR OIL SAE40 API SF/CF",
     description: "High Performance mono-grade mineral engine oil",
-    image: "/src/assets/FrameU.png",
+    image: FrameU,
   },
   {
     id: 5,
     name: "CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4",
     description: "World class mineral technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameD.png",
+    image: FrameD,
   },
   {
     id: 6,
     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF",
     description: "Synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameO.png",
+    image: FrameO,
   },
   {
     id: 7,
     name: "CASSTURBO HD SAE40 API CF/SF",
     description: "Heavy duty Mono-grade mineral engine oil",
-    image: "/src/assets/FrameL.png",
+    image: FrameL,
   },
   {
     id: 8,
     name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     description: "Fleet multigrade diesel engine oil designed to provide superior performanc for trucks, buses, light commercial vehicle.",
-    image: "/src/assets/FrameK.png",
+    image: FrameK,
   },
   {
     id: 9,
     name: "CASSTURBO HD ULTRA 15W40 CI-4",
     description: "Long drain premium performance Multigrade diesel engine oil designed for modern heavy duty engine",
-    image: "/src/assets/FrameC.png",
+    image: FrameC,
   },
   {
     id: 10,
@@ -86,61 +91,65 @@ const products: Product [] = [
     id: 11,
     name: "CASSTRANS DEX D2 ATF DEXRON IID",
     description: "Multivehicle automatics transmission fluid and power steering fluid",
-    image: "/src/assets/FrameM.png",
+    image: FrameM,
   },
   {
     id: 12,
     name: "CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM",
     description: "Multivehicle automatics transmission fluid and power steering fluid",
-    image: "/src/assets/FrameA.png",
+    image: FrameA,
   },
   {
     id: 13,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameD.png",
+    image: FrameD,
   },
   {
     id: 14,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-40 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameR.png",
+    image: FrameR,
   },
   {
     id: 15,
     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-30 API SN/CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameV.png",
+    image: FrameV,
   },
   {
     id: 16,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameQ.png",
+    image: FrameQ,
   },
   {
     id: 17,
     name: "CASSTURBO HD SAE40 API SF/CF 25L",
     description: "",
-    image: "/src/assets/FrameI.png",
+    image: FrameI,
+    noButton: true,
   },
   {
     id: 18,
     name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF 25L",
     description: "",
-    image: "/src/assets/FrameN.png",
+    image: FrameN,
+    noButton: true,
   },
   {
     id: 19,
     name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF  200L",
     description: "",
-    image: "/src/assets/FrameH.png",
+    image: FrameH,
+    noButton: true,
   },
   {
     id: 20,
     name: "CASSTURBO HD SAE40 API SF/CF 25L 200L",
     description: "",
-    image: "/src/assets/FrameJ.png",
+    image: FrameJ,
+    noButton: true,
   },
 
 ];
@@ -156,7 +165,7 @@ const AllLubricants = () => {
   return (
     <div>
       {/*Hero Banner*/}
-     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
+     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
         <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
@@ -205,7 +214,7 @@ const AllLubricants = () => {
             <div  className="p-4">
               <h3 className="font-semibold text-lg">{product.name}</h3>
              <p className="text-gray-600 text-sm">{product.description}</p>
-            <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">See More</button>
+           {!product.noButton && <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">See More</button>} 
           </div>
           </div>
         ))}

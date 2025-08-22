@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import BgAuto from "../assets/BgAuto.png"
+import { FrameA, FrameM } from "../assets";
 
 
 const products  = [
@@ -6,13 +8,13 @@ const products  = [
     id: 1,
      name: "CASSTRANS DEX D2 ATF DEXRON IID",
     description: "Multivehicle automatics transmission fluid and power steering fluid",
-    image: "/src/assets/FrameM.png",
+    image: FrameM,
   },
   {
     id: 2,
     name: "CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM",
     description: "Multivehicle automatics transmission fluid and power steering fluid",
-    image: "/src/assets/FrameA.png",
+    image: FrameA,
   },
 
  
@@ -23,7 +25,7 @@ const TransmissionOil = () => {
   return (
     <div>
         {/*Hero Banner*/}
-     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
+     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
         <h2 className="text-4xl font-bold">Automatic Lubricants</h2>

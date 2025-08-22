@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
-
+import BgAuto from "../assets/BgAuto.png";
+import { FrameF, FrameG } from "../assets";
 const products = [
   {
     id: 1,
     name: "CASSTEX PREMIUM 4T 20W-40 API SL/JASO MA2",
     description: "Premium Multigrade 4T Oil for Motorcycles.",
-    image: "/src/assets/FrameF.png",
+    image: FrameF,
   },
   {
     id: 2,
     name: "CASSTEX MOTO 4T 20W-40 API SF/CC",
     description: "High Performance Multigrade 4T Oil for Motorcycles.",
-    image: "/src/assets/FrameG.png",
+    image: FrameG,
   },
 ];
 
@@ -19,7 +20,7 @@ const products = [
   return (
     <div>
        {/*Hero Banner*/}
-     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
+     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
         <h2 className="text-4xl font-bold">Automatic Lubricants</h2>

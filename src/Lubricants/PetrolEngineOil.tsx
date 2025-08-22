@@ -1,5 +1,7 @@
 
 import { Link } from "react-router-dom";
+import BgAuto from "../assets/BgAuto.png";
+import { FrameD, FrameE, FrameO, FrameQ, FrameR, FrameU } from "../assets";
 
 
 
@@ -9,51 +11,51 @@ const products  = [
     id: 1,
     name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF",
     description: "Super Performance Multigrade designed with deposit guard technology",
-    image: "/src/assets/FrameE.png",
+    image: FrameE,
   },
   {
     id: 2,
     name: "CASSGOLD POWER MOTOR OIL SAE40 API SF/CF",
     description: "High Performance mono-grade mineral engine oil",
-    image: "/src/assets/FrameU.png",
+    image: FrameU,
   },
 
   {
     id: 3,
     name: "CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4",
     description: "World class mineral technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameD.png",
+    image: FrameD,
   },
   {
     id: 4,
     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF",
     description: "Synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameO.png",
+    image: FrameO,
   },
 
   {
     id: 5,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameD.png",
+    image: FrameD,
   },
   {
     id: 6,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-40 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameR.png",
+    image: FrameR,
   },
   {
     id: 7,
      name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF",
     description: "Synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameO.png",
+    image: FrameO,
   },
   {
     id: 8,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: "/src/assets/FrameQ.png"
+    image: FrameQ,
   },
 ];
 
@@ -65,7 +67,7 @@ const PetrolEngineOil = () => {
   return (
 <div>
      {/*Hero Banner*/}
-     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
+     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
         <h2 className="text-4xl font-bold">Automatic Lubricants</h2>

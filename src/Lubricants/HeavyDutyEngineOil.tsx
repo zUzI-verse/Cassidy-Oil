@@ -1,30 +1,32 @@
 import { Link } from "react-router-dom";
+import BgAuto from "../assets/BgAuto.png";
+import { FrameH, FrameI, FrameJ, FrameN } from "../assets";
 
 const products  = [
   {
     id: 1,
     name: "CASSTURBO HD SAE40 API SF/CF 25L",
     description: "",
-    image: "/src/assets/FrameI.png",
+    image: FrameI,
   },
   {
     id: 2,
      name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF 25L",
     description: "",
-    image: "/src/assets/FrameN.png",
+    image:FrameN,
   },
 
   {
     id: 3,
      name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF  200L",
     description: "",
-    image: "/src/assets/FrameH.png",
+    image: FrameH,
   },
   {
     id: 4,
     name: "CASSTURBO HD SAE40 API SF/CF 25L 200L",
     description: "",
-    image: "/src/assets/FrameJ.png",
+    image: FrameJ,
   },
 
 ];
@@ -33,7 +35,7 @@ const HeavyDutyEngineOil = () => {
   return (
     <div>
          {/*Hero Banner*/}
-             <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: "url('/src/assets/BgAuto.png')" }}>
+             <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <div>
                 <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
