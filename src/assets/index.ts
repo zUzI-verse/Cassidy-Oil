@@ -1,0 +1,1 @@
+export {default as FrameB } from "./FrameB.png";

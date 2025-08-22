@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
-// import {FrameA, FrameB } from "../assets"
+ import FrameF  from "../assets/FrameF.png";
+ import {FrameB} from "../assets";
 
 
 
@@ -25,7 +26,7 @@ const products: Product [] = [
     id: 1,
     name: "CASSKET PREMIUM 4T 20W-40 Api SL/MA2",
     description: " Premium Multigrade Okada, Kekenapep engine oil ",
-    image: "/src/assets/FrameF.png",
+    image: FrameF,
   },
   {
     id: 2,
@@ -79,7 +80,7 @@ const products: Product [] = [
     id: 10,
     name: "CASSTURBO HD FORCE 15W40 CH-4",
     description: "Superior Performance Multigrade diesel engine oil designed with active protection",
-    image: "/src/assets/FrameB.png",
+    image: FrameB,
   },
   {
     id: 11,
