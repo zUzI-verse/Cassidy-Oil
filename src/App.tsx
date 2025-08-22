@@ -9,7 +9,8 @@ import PetrolEngineOil from "./Lubricants/PetrolEngineOil"
 import DieselEngine from "./Lubricants/DieselEngine"
 import TransmissionOil from "./Lubricants/TransmissionOil"
 import HeavyDutyEngineOil from "./Lubricants/HeavyDutyEngineOil"
-import Footer from "./Components/Footer"
+import CasstekPrem from "./Lubricants/DataOnLub/CasstekPrem"
+
 
 
 
@@ -34,9 +35,10 @@ const App = () => {
           <Route path="lubricants/diesel-engine-oil" element={<DieselEngine />} /> 
           <Route path="lubricants/transmission-oil" element={<TransmissionOil />} />
           <Route path="lubricants/heavy-duty-engine-oil" element={<HeavyDutyEngineOil />} />
+          {/* Lubricants Data */}
+          <Route path="lubricants/dataonlub/cassket-prem" element={<CasstekPrem />} />
         </Route>
       </Routes>
-        <Footer />
          </div>
     </BrowserRouter>
      

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-
+import Footer from "./Footer";
 
 
 const Layout = () => {
@@ -11,7 +11,7 @@ const Layout = () => {
         <Outlet /> {/* This renders the child route content is that placeholder — it tells React Router:
            👉 “Insert the child route’s element here.” */}
         </main>
-        
+        <Footer />
     </div>
   )
 }

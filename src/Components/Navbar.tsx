@@ -1,5 +1,5 @@
 import Group from "../assets/Group.svg";
-import {Menu, X} from "lucide-react";
+// import {Menu, X} from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -43,7 +43,7 @@ const Navbar = () => {
           onClick={toggleMenu}
           aria-label="Toggle Menu">
           {
-            menuOpen ? <X className="h-6 w-6" /> : <Menu size={28} />}
+            menuOpen ? <p>X</p> : <p>Menu</p>}
           </button>
       </div>
 
