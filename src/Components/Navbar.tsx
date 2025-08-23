@@ -84,7 +84,7 @@ const Navbar = () => {
 
             <li>
               <Link
-                to="/lubricantss"
+                to="/lubricants"
                 className="text-[#002b36] font-semibold hover:text-[#002b36]"
               >
                 Lubricants

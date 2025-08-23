@@ -38,9 +38,7 @@ const categories = [
   { name: "Petrol Engine Oil", path: "/lubricants/petrol-engine-oil" },
   { name: "Diesel Engine Oil", path: "/lubricants/diesel-engine-oil" },
   { name: "Transmission Oil", path: "/lubricants/transmission-oil" },
-  {
-    name: "Heavy Duty Engine Oils",
-    path: "/lubricants/heavy-duty-engine-oils",
+  {name: "Heavy Duty Engine Oils", path: "/lubricants/heavy-duty-engine-oils",
   },
 ];
 const products: Product[] = [
