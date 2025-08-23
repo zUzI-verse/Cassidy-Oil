@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import BgAuto from "../assets/BgAuto.png";
 import { FrameD, FrameE, FrameO, FrameQ, FrameR, FrameU } from "../assets";
 
 
@@ -67,7 +66,7 @@ const PetrolEngineOil = () => {
   return (
 <div>
      {/*Hero Banner*/}
-     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
+     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage:`url(/assets/bg-auto.png)` }}>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div>
         <h2 className="text-4xl font-bold">Automatic Lubricants</h2>

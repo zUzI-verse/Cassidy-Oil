@@ -9,8 +9,11 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white shadow-sm">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
-        {/* Logo */}
+       {/* Logo */}
+      <Link to="/">
         <img src={Group} alt="Cassidy Energy" className="h-12 w-auto" />
+      </Link>
+
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10 text-base">
           <li>
