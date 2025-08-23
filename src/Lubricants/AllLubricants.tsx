@@ -1,22 +1,36 @@
-import { useState } from "react"
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import BgAuto from "../assets/BgAuto.png";
- import { FrameA, FrameB, FrameC, FrameD, FrameE, FrameF,  FrameG, FrameH, FrameI, FrameJ, FrameK, FrameL, FrameM, FrameN, FrameO,  FrameQ, FrameR, FrameU, FrameV   } from "../assets";
-
+import {
+  FrameA,
+  FrameB,
+  FrameC,
+  FrameD,
+  FrameE,
+  FrameF,
+  FrameG,
+  FrameH,
+  FrameI,
+  FrameJ,
+  FrameK,
+  FrameL,
+  FrameM,
+  FrameN,
+  FrameO,
+  FrameQ,
+  FrameR,
+  FrameU,
+  FrameV,
+} from "../assets";
 
 //  import FrameF  from "../assets/FrameF.png";
 
-
-
-
-
 type Product = {
-    id: number;
-    name: string;
-    description: string;
-    image: string;
-    noButton?: boolean;
-}
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  noButton?: boolean;
+};
 
 const categories = [
   { name: "All", path: "/lubricants" },
@@ -24,10 +38,13 @@ const categories = [
   { name: "Petrol Engine Oil", path: "/lubricants/petrol-engine-oil" },
   { name: "Diesel Engine Oil", path: "/lubricants/diesel-engine-oil" },
   { name: "Transmission Oil", path: "/lubricants/transmission-oil" },
-  { name: "Heavy Duty Engine Oils", path: "/lubricants/heavy-duty-engine-oils" },
+  {
+    name: "Heavy Duty Engine Oils",
+    path: "/lubricants/heavy-duty-engine-oils",
+  },
 ];
-const products: Product [] = [
-     {
+const products: Product[] = [
+  {
     id: 1,
     name: "CASSKET PREMIUM 4T 20W-40 Api SL/MA2",
     description: " Premium Multigrade Okada, Kekenapep engine oil ",
@@ -42,7 +59,8 @@ const products: Product [] = [
   {
     id: 3,
     name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF",
-    description: "Super Performance Multigrade designed with deposit guard technology",
+    description:
+      "Super Performance Multigrade designed with deposit guard technology",
     image: FrameE,
   },
   {
@@ -54,13 +72,15 @@ const products: Product [] = [
   {
     id: 5,
     name: "CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4",
-    description: "World class mineral technology engine oil designed for superior wear protection",
+    description:
+      "World class mineral technology engine oil designed for superior wear protection",
     image: FrameD,
   },
   {
     id: 6,
     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF",
-    description: "Synthetic technology engine oil designed for superior wear protection",
+    description:
+      "Synthetic technology engine oil designed for superior wear protection",
     image: FrameO,
   },
   {
@@ -72,55 +92,64 @@ const products: Product [] = [
   {
     id: 8,
     name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
-    description: "Fleet multigrade diesel engine oil designed to provide superior performanc for trucks, buses, light commercial vehicle.",
+    description:
+      "Fleet multigrade diesel engine oil designed to provide superior performanc for trucks, buses, light commercial vehicle.",
     image: FrameK,
   },
   {
     id: 9,
     name: "CASSTURBO HD ULTRA 15W40 CI-4",
-    description: "Long drain premium performance Multigrade diesel engine oil designed for modern heavy duty engine",
+    description:
+      "Long drain premium performance Multigrade diesel engine oil designed for modern heavy duty engine",
     image: FrameC,
   },
   {
     id: 10,
     name: "CASSTURBO HD FORCE 15W40 CH-4",
-    description: "Superior Performance Multigrade diesel engine oil designed with active protection",
+    description:
+      "Superior Performance Multigrade diesel engine oil designed with active protection",
     image: FrameB,
   },
   {
     id: 11,
     name: "CASSTRANS DEX D2 ATF DEXRON IID",
-    description: "Multivehicle automatics transmission fluid and power steering fluid",
+    description:
+      "Multivehicle automatics transmission fluid and power steering fluid",
     image: FrameM,
   },
   {
     id: 12,
     name: "CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM",
-    description: "Multivehicle automatics transmission fluid and power steering fluid",
+    description:
+      "Multivehicle automatics transmission fluid and power steering fluid",
     image: FrameA,
   },
   {
     id: 13,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN-CF",
-    description: "Fully synthetic technology engine oil designed for superior wear protection",
+    description:
+      "Fully synthetic technology engine oil designed for superior wear protection",
     image: FrameD,
   },
   {
     id: 14,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-40 API SN-CF",
-    description: "Fully synthetic technology engine oil designed for superior wear protection",
+    description:
+      "Fully synthetic technology engine oil designed for superior wear protection",
     image: FrameR,
   },
   {
     id: 15,
     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-30 API SN/CF",
-    description: "Fully synthetic technology engine oil designed for superior wear protection",
+    description:
+      "Fully synthetic technology engine oil designed for superior wear protection",
     image: FrameV,
   },
   {
     id: 16,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN-CF",
-    description: "Fully synthetic technology engine oil designed for superior wear protection",
+    description:
+      "Fully synthetic technology engine oil designed for superior wear protection",
     image: FrameQ,
   },
   {
@@ -151,78 +180,94 @@ const products: Product [] = [
     image: FrameJ,
     noButton: true,
   },
-
 ];
 
 const AllLubricants = () => {
-    const [activeCategory, setActiveCategory] = useState("All");
-    
-    const filteredProducts =
-    activeCategory === "All" ? products : products.filter((p) =>
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredProducts =
+    activeCategory === "All"
+      ? products
+      : products.filter((p) =>
           p.name.toLowerCase().includes(activeCategory.toLowerCase())
         );
-    
+
   return (
     <div>
       {/*Hero Banner*/}
-     <section className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 " style={{ backgroundImage: BgAuto }}>
-      <div className="absolute inset-0 bg-black opacity-20"></div>
-      <div>
-        <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
-      </div>
-     </section>
-
+      <section
+        className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 "
+        style={{ backgroundImage: `url(/assets/bg-auto.png)` }}
+      >
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div>
+          <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
+        </div>
+      </section>
 
       {/* Breadcrumb Navigation */}
       <div className="container mx-auto px-6 py-4 text-sm text-gray-600">
-        <Link to="/" className="hover:text-orange-500">Home</Link>
+        <Link to="/" className="hover:text-orange-500">
+          Home
+        </Link>
         <span className="mx-2">/</span>
         <Link to="/lubricants" className="text-orange-500 font-medium">
           Lubricants
         </Link>
       </div>
 
-     {/* Main Content */}
-     <main className="container mx-auto px-6 py-12">
-      <div className="flex gap-8">
+      {/* Main Content */}
+      <main className="container mx-auto px-6 py-12">
+        <div className="flex gap-8">
+          {/* Side Bar */}
+          <aside className="w-1/4">
+            <ul className="space-y-3">
+              {categories.map((cat) => (
+                <li
+                  key={cat.name}
+                  className={`cursor-pointer ${
+                    activeCategory === cat.name
+                      ? "text-orange-500 font-bold"
+                      : "text-gray-700 hover:text-orange-500"
+                  }`}
+                  onClick={() => setActiveCategory(cat.name)}
+                >
+                  <Link
+                    to={cat.path}
+                    className="text-gray-700 hover:text-orange-500"
+                  >
+                    {cat.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </aside>
 
-        {/* Side Bar */}
-       <aside className="w-1/4">
-          <ul className="space-y-3">
-          {categories.map((cat) => (
-            <li key={cat.name}
-              className={`cursor-pointer ${activeCategory === cat.name ? "text-orange-500 font-bold" : "text-gray-700 hover:text-orange-500"}`}
-              onClick={() => setActiveCategory(cat.name)}
-            >
-              <Link
-                to={cat.path}
-                className="text-gray-700 hover:text-orange-500"
-              >
-                {cat.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-    </aside>
-  
-
-        {/* Product List */}    
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
-        {filteredProducts.map((product:Product) => (
-          <div key={product.id} className="bg-white p-4 rounded-lg shadow">
-            <img src={product.image} alt={product.name}  className="w-full h-56 object-contain"/>
-            <div  className="p-4">
-              <h3 className="font-semibold text-lg">{product.name}</h3>
-             <p className="text-gray-600 text-sm">{product.description}</p>
-           {!product.noButton && <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">See More</button>} 
-          </div>
-          </div>
-        ))}
-        </section>
-      </div>
-     </main>
+          {/* Product List */}
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
+            {filteredProducts.map((product: Product) => (
+              <div key={product.id} className="bg-white p-4 rounded-lg shadow">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-56 object-contain"
+                />
+                <div className="p-4">
+                  <h3 className="font-semibold text-lg">{product.name}</h3>
+                  <p className="text-gray-600 text-sm">{product.description}</p>
+                  {!product.noButton && (
+                    <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+                      See More
+                    </button>
+                  )}
+                </div>
+              </div>
+            ))}
+          </section>
+        </div>
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default AllLubricants
+export default AllLubricants;

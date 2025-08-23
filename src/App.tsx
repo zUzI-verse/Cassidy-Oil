@@ -12,13 +12,6 @@ import HeavyDutyEngineOil from "./Lubricants/HeavyDutyEngineOil"
 import CasstekPrem from "./Lubricants/DataOnLub/CasstekPrem"
 
 
-
-
-
-
-
-
-
 const App = () => {
   return (
    <BrowserRouter>
