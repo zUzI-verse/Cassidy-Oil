@@ -21,8 +21,10 @@ const App = () => {
             <Route path="about-us" element={<About />} />
             <Route path="contact" element={<Contact />} />
             {/* Lubricants routes */}
-            <Route path="lubricants" element={<AllLubricants />} />
-            <Route path="lubricants/bike-oils" element={<BikeOil />} />
+            <Route path="lubricants" element={<AllLubricants />} 
+            />
+            <Route path="lubricants/bike-oils" element={<BikeOil />}
+             />
             <Route
               path="lubricants/petrol-engine-oil"
               element={<PetrolEngineOil />}
@@ -41,7 +43,7 @@ const App = () => {
             />
             {/* Lubricants Data */}
             <Route
-              path="lubricants/dataonlub/cassket-prem"
+              path="lubricants/dataonlub/cassket-prem:id"
               element={<CasstekPrem />}
             />
 

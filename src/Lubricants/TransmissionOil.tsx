@@ -37,7 +37,7 @@ const TransmissionOil = () => {
         <span className="mx-2">/</span>
         <a href="/lubricants" className="hover:text-orange-500">Lubricants</a>
         <span className="mx-2">/</span>
-        <span className="text-orange-500 font-medium">Diesel Engine Oil</span>
+        <span className="text-orange-500 font-medium">Transmission Oil</span>
       </div>
 
        {/* Main Content */}
