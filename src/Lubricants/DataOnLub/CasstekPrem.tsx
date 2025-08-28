@@ -1,6 +1,26 @@
-
+import {useParams} from "react-router-dom";
+import { products } from "../../data/products";
 
 const CasstekPrem = () => {
+  const { id } = useParams<{ id: string }>(); // Get product id from URL
+  const product = products.find((p) => p.id === Number(id));
+
+  if (!product) {
+    return <p className="text-center mt-10 text-red-500">Product not found</p>;
+  }
+
+
+    const testData = [
+    { parameter: "Appearance", method: "Visual", value: "Clear" },
+    { parameter: "Colour", method: "Visual", value: "Brown" },
+    { parameter: "Density at 300C (g/ml)", method: "ASTM D 1298", value: "858" },
+    { parameter: "Kinematic Viscosity at 400C (cSt)", method: "ASTM D445", value: "130" },
+    { parameter: "Kinematic Viscosity at 1000C (cSt)", method: "ASTM D445", value: "14.8" },
+    { parameter: "Viscosity Index", method: "ASTM D 2270", value: "115" },
+    { parameter: "Pour Point (0C)", method: "ASTM D 97", value: "-21" },
+    { parameter: "Flash Point (COC) (0C)", method: "ASTM D 93", value: "240" },
+    { parameter: "TBN (mg KOH/g)", method: "ASTM D 2896B", value: "8" },
+  ];
   return (
     <div className="w-full">
          {/*Hero Banner*/}
@@ -17,11 +37,8 @@ const CasstekPrem = () => {
         <span className="mx-2">/</span>
         <a href="/lubricants" className="hover:text-orange-500">Lubricants</a>
         <span className="mx-2">/</span>
-        <span className="text-orange-500 font-medium">CASTON PREMIUM 4T (20W-40, API SL, JASO MA2)</span>
+        <span className="text-orange-500 font-medium">CASSTEK PREMIUM 4T 20W-40 API SL/MA2</span>
       </div>
-
-
-
 
 
       {/* Main Content */}
@@ -32,25 +49,21 @@ const CasstekPrem = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">DESCRIPTION</h2>
             <p className="text-gray-700 leading-relaxed">
-              This is a high-quality 4-stroke engine oil that offers excellent engine protection and
-              performance in a wide range of operating conditions. CASTON PREMIUM 4T (20W-40) is formulated
-              with advanced additives that provide outstanding wear protection, oxidation stability, and
-              thermal stability. This oil offers a long service life and helps extend engine life.
+             The engine in your bike risks damage all the time, when starting up, when running and even when the engine is off. CASSTEK PREMIUM 4T 20W-40 API SL/MA2 is a high performance 4 stroke Motorbike engine oil, which is engineered to protect your General Transportation and Power Bike engine and enhance its performance. By using world class additive molecule technology and high-quality base oil, CASSTEK oil clings to the engine and gearbox to provide excellent service in all operating conditions.
             </p>
           </section>
 
           {/* Performance */}
           <section>
             <h2 className="text-xl font-semibold mb-2">PERFORMANCE</h2>
-            <p className="text-gray-700">Meets JASO MA2 and API SL standards (20W-40, API SL, JASO MA2)</p>
+            <p className="text-gray-700">Meets the requirements of SAE 20W-40, API SL, JASO MA2</p>
           </section>
 
           {/* Application */}
           <section>
             <h2 className="text-xl font-semibold mb-2">APPLICATION</h2>
             <p className="text-gray-700">
-              CASTON PREMIUM 4T (20W-40, API SL, JASO MA2) can be used in 4-stroke motorbike engines manufactured by
-              leading global OEMs. OEM recommendations should be followed.
+             CASSTEK PREMIUM 4T 20W-40 API SL/MA2 can be used in all 4-stroke motorbike engines manufactured by leading global OEMs. OEM recommended drain interval is to be followed.
             </p>
           </section>
 
@@ -58,81 +71,41 @@ const CasstekPrem = () => {
           <section>
             <h2 className="text-xl font-semibold mb-4">PRODUCT BENEFITS</h2>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Minimizes deposits on engine parts and reduces sludge formation.</li>
-              <li>Provides excellent protection of engine parts with minimum engine wear during normal operating conditions.</li>
-              <li>Outstanding thermal and oxidation stability reducing oil consumption under normal driving conditions.</li>
-              <li>Excellent corrosion protection for metallic engine parts.</li>
-              <li>Ensures smooth operation and extended engine life.</li>
+              <li>Enhanced protection of engine parts at the point of engine start up.</li>
+              <li>Reduced propensity of sludge deposits which ensures superior engine cleanliness during normal operation.</li>
+              <li>Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions.</li>
+              <li>Reduced Disc wear and Valve Train wear.</li>
+              <li>Excellent corrosion protection, even when engine is off.</li>
             </ul>
           </section>
 
           {/* Specification Table */}
-          <section className="overflow-x-auto mt-6">
-            <table className="w-full border border-gray-300 text-left text-gray-700">
-              <thead className="bg-gray-100">
-                <tr>
-                  <th className="p-3 border">Test Parameters</th>
-                  <th className="p-3 border">Test Methods</th>
-                  <th className="p-3 border">Typical Value</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="p-3 border">Appearance</td>
-                  <td className="p-3 border">Visual</td>
-                  <td className="p-3 border">Clear</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Color</td>
-                  <td className="p-3 border">Visual</td>
-                  <td className="p-3 border">L</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Density @30°C (g/ml)</td>
-                  <td className="p-3 border">ASTM D 1298</td>
-                  <td className="p-3 border">0.890</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Kinematic Viscosity @40°C (cSt)</td>
-                  <td className="p-3 border">ASTM D 445</td>
-                  <td className="p-3 border">130</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Kinematic Viscosity @100°C (cSt)</td>
-                  <td className="p-3 border">ASTM D 445</td>
-                  <td className="p-3 border">14.5</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Viscosity Index</td>
-                  <td className="p-3 border">ASTM D 2270</td>
-                  <td className="p-3 border">115</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Flash Point (°C)</td>
-                  <td className="p-3 border">ASTM D 92</td>
-                  <td className="p-3 border">230</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Pour Point (°C)</td>
-                  <td className="p-3 border">ASTM D 97</td>
-                  <td className="p-3 border">-24</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">TBN (mg KOH/g)</td>
-                  <td className="p-3 border">ASTM D 2896</td>
-                  <td className="p-3 border">7.0</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+              <section className="overflow-x-auto mt-6">
+                <table className="min-w-full border border-gray-300 rounded-lg">
+                      <thead className="bg-gray-100">
+                        <tr>
+                          <th className="border px-4 py-2 text-left">Test Parameters</th>
+                          <th className="border px-4 py-2 text-left">Test Methods</th>
+                          <th className="border px-4 py-2 text-left">Typical Values</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {testData.map((row, index) => (
+                          <tr key={index} className="hover:bg-gray-50">
+                            <td className="border px-4 py-2">{row.parameter}</td>
+                            <td className="border px-4 py-2">{row.method}</td>
+                            <td className="border px-4 py-2">{row.value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                </table>
+              </section >
 
           {/* Storage */}
           <section className="mt-6">
             <h2 className="text-xl font-semibold mb-2">STORAGE</h2>
             <p className="text-gray-700">
-              All packages should remain closed and stored in a clean environment with moderate temperature to
-              prevent contamination. Avoid extreme heat or freezing conditions. For safety, refer to the Material Safety
-              Data Sheet (MSDS) before handling.
+              All packages should be stored under cover and should not be stored where ambient temperature exceeds 600C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.
             </p>
             <a
               href="#"
@@ -146,9 +119,10 @@ const CasstekPrem = () => {
         {/* Right Image */}
         <div className="flex justify-center items-start">
           <img
-            src="/images/oil-product.png"
-            alt="CASTON PREMIUM 4T"
-            className="w-64 object-contain"
+           
+            src={product.image}
+              alt={product.name}
+              className="w-64 h-64 object-contain rounded-lg shadow-lg"
           />
         </div>
       </div>

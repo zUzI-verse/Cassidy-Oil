@@ -3,7 +3,6 @@ import {useParams} from "react-router-dom";
 import { products } from "../../data/products";
 
 
-
 const CassgoldAdvaced40 = () => {
   const { id } = useParams<{ id: string }>(); // Get product id from URL
   const product = products.find((p) => p.id === Number(id));
@@ -48,6 +47,7 @@ const CassgoldAdvaced40 = () => {
 
               {/* Main Content */}
               <div className="container mx-auto px-6  py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Left Content */}
                 <div className="md:col-span-2 space-y-6">
                     {/* Description */}
                     <section>
