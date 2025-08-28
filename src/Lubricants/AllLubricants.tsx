@@ -93,7 +93,7 @@ const AllLubricants = () => {
                   <h3 className="font-semibold text-lg">{product.name}</h3>
                   <p className="text-gray-600 text-sm">{product.description}</p>
                   {!product.noButton && (
-                    <Link to={`/lubricants/dataonlub/cassket-prem/${product.id}`}>
+                   <Link to={`/lubricants/dataonlube/${product.id}`}>
                     <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
                       See More
                     </button>

@@ -9,8 +9,8 @@ import PetrolEngineOil from "./Lubricants/PetrolEngineOil";
 import DieselEngine from "./Lubricants/DieselEngine";
 import TransmissionOil from "./Lubricants/TransmissionOil";
 import HeavyDutyEngineOil from "./Lubricants/HeavyDutyEngineOil";
-import CasstekPrem from "./Lubricants/DataOnLub/CasstekPrem";
-import CasstekMoto from "./Lubricants/DataOnLub/CasstekMoto";
+import CasstekPrem from "./Lubricants/dataonlube/CasstekPrem";
+// import CasstekMoto from "./Lubricants/dataonlube/CasstekMoto";
 
 
 const App = () => {
@@ -45,14 +45,14 @@ const App = () => {
             />
             {/* Lubricants Data */}
             <Route
-              path="lubricants/dataonlub/cassket-prem/:id"
+              path="lubricants/dataonlube/cassket-premium/:id"
               element={<CasstekPrem />}
             />
            
-            <Route
-              path="lubricants/dataonlub/casstek-moto/:id"
+            {/* <Route
+              path="lubricants/dataonlube/cassket-moto/:id"
               element={<CasstekMoto />}
-            />
+            /> */}
 
 
             {/* 404 Page */}
