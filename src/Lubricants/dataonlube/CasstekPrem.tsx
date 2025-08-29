@@ -49,21 +49,21 @@ const CasstekPrem = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">DESCRIPTION</h2>
             <p className="text-gray-700 leading-relaxed">
-             The engine in your bike risks damage all the time, when starting up, when running and even when the engine is off. CASSTEK PREMIUM 4T 20W-40 API SL/MA2 is a high performance 4 stroke Motorbike engine oil, which is engineered to protect your General Transportation and Power Bike engine and enhance its performance. By using world class additive molecule technology and high-quality base oil, CASSTEK oil clings to the engine and gearbox to provide excellent service in all operating conditions.
+            {product.descriptions}
             </p>
           </section>
 
           {/* Performance */}
           <section>
             <h2 className="text-xl font-semibold mb-2">PERFORMANCE</h2>
-            <p className="text-gray-700">Meets the requirements of SAE 20W-40, API SL, JASO MA2</p>
+            <p className="text-gray-700">{product.performance}</p>
           </section>
 
           {/* Application */}
           <section>
             <h2 className="text-xl font-semibold mb-2">APPLICATION</h2>
             <p className="text-gray-700">
-             CASSTEK PREMIUM 4T 20W-40 API SL/MA2 can be used in all 4-stroke motorbike engines manufactured by leading global OEMs. OEM recommended drain interval is to be followed.
+              {product.applications}
             </p>
           </section>
 
@@ -105,13 +105,13 @@ const CasstekPrem = () => {
           <section className="mt-6">
             <h2 className="text-xl font-semibold mb-2">STORAGE</h2>
             <p className="text-gray-700">
-              All packages should be stored under cover and should not be stored where ambient temperature exceeds 600C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.
+              {product.storage} 
             </p>
             <a
               href="#"
               className="text-red-600 font-semibold flex items-center mt-2"
             >
-              📥 Click here to download PDF
+              📥 {product.pdfLink}
             </a>
           </section>
         </div>

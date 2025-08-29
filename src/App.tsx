@@ -45,7 +45,7 @@ const App = () => {
             />
             {/* Lubricants Data */}
             <Route
-              path="lubricants/dataonlube/cassket-premium/:id"
+              path="lubricants/dataonlube/casstek-premium/:id"
               element={<CasstekPrem />}
             />
            
