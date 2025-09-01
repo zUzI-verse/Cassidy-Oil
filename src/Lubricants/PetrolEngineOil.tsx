@@ -1,42 +1,41 @@
 
 import { Link } from "react-router-dom";
-import { FrameD, FrameE, FrameO, FrameQ, FrameR, FrameU } from "../assets";
-
+import { FrameD, FrameE, FrameO, FrameQ, FrameR, FrameU, FrameW } from "../assets";
 
 
 
 const products  = [
   {
-    id: 1,
+    id: 3,
     name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF",
     description: "Super Performance Multigrade designed with deposit guard technology",
     image: FrameE,
   },
   {
-    id: 2,
+    id: 4,
     name: "CASSGOLD POWER MOTOR OIL SAE40 API SF/CF",
     description: "High Performance mono-grade mineral engine oil",
     image: FrameU,
   },
 
   {
-    id: 3,
+    id: 5,
     name: "CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4",
     description: "World class mineral technology engine oil designed for superior wear protection",
     image: FrameD,
   },
   {
-    id: 4,
+    id: 6,
     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF",
     description: "Synthetic technology engine oil designed for superior wear protection",
     image: FrameO,
   },
 
   {
-    id: 5,
+    id: 7,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: FrameD,
+    image: FrameW,
   },
   {
     id: 6,
@@ -112,9 +111,11 @@ const PetrolEngineOil = () => {
                 <div className="p-4">
                   <h3 className="font-semibold text-lg">{product.name}</h3>
                   <p className="text-gray-600 text-sm">{product.description}</p>
-                  <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-                    See more
-                  </button>
+                  <Link to={`/lubricants/dataonlube/casstek-premium/${product.id}`}>
+                    <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+                      See More
+                    </button>
+                    </Link>
                 </div>
               </div>
             ))}

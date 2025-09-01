@@ -37,7 +37,7 @@ const CasstekPrem = () => {
         <span className="mx-2">/</span>
         <a href="/lubricants" className="hover:text-orange-500">Lubricants</a>
         <span className="mx-2">/</span>
-        <span className="text-orange-500 font-medium">CASSTEK PREMIUM 4T 20W-40 API SL/MA2</span>
+        <span className="text-orange-500 font-medium">{product.name}</span>
       </div>
 
 

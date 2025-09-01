@@ -7,12 +7,14 @@ const products  = [
     name: "CASSTURBO HD SAE40 API SF/CF 25L",
     description: "",
     image: FrameI,
+    noButton: true,
   },
   {
     id: 2,
      name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF 25L",
     description: "",
     image:FrameN,
+    noButton: true,
   },
 
   {
@@ -20,12 +22,14 @@ const products  = [
      name: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF  200L",
     description: "",
     image: FrameH,
+    noButton: true,
   },
   {
     id: 4,
     name: "CASSTURBO HD SAE40 API SF/CF 25L 200L",
     description: "",
     image: FrameJ,
+    noButton: true,
   },
 
 ];
@@ -80,9 +84,6 @@ const HeavyDutyEngineOil = () => {
                         <div className="p-4">
                           <h3 className="font-semibold text-lg">{product.name}</h3>
                           <p className="text-gray-600 text-sm">{product.description}</p>
-                          <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-                            See more
-                          </button>
                         </div>
                       </div>
                     ))}
