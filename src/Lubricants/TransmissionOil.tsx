@@ -4,13 +4,13 @@ import { FrameA, FrameM } from "../assets";
 
 const products  = [
   {
-    id: 1,
+    id: 13,
      name: "CASSTRANS DEX D2 ATF DEXRON IID",
     description: "Multivehicle automatics transmission fluid and power steering fluid",
     image: FrameM,
   },
   {
-    id: 2,
+    id: 14,
     name: "CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM",
     description: "Multivehicle automatics transmission fluid and power steering fluid",
     image: FrameA,

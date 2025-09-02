@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { FrameD, FrameE, FrameO, FrameQ, FrameR, FrameU, FrameW } from "../assets";
+import { FrameD, FrameE, FrameO, FrameQ, FrameR, FrameU, FrameS, FrameV } from "../assets";
 
 
 
@@ -35,22 +35,22 @@ const products  = [
     id: 7,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
-    image: FrameW,
+    image: FrameS,
   },
   {
-    id: 6,
+    id: 8,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-40 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
     image: FrameR,
   },
   {
-    id: 7,
-     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF",
-    description: "Synthetic technology engine oil designed for superior wear protection",
-    image: FrameO,
+    id: 9,
+     name: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-30 API SN/CF",
+    description: "Fully synthetic technology engine oil designed for superior wear protection",
+    image: FrameV,
   },
   {
-    id: 8,
+    id: 10,
     name: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN-CF",
     description: "Fully synthetic technology engine oil designed for superior wear protection",
     image: FrameQ,

@@ -6,6 +6,7 @@ import { Button } from "@material-tailwind/react";
 import { Card } from "@material-tailwind/react";
 import { Input } from "@material-tailwind/react";
 
+
 const Home: React.FC = () => {
   return (
     <div className="w-full">

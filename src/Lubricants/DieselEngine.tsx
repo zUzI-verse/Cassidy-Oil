@@ -6,26 +6,26 @@ import { FrameL, FrameK, FrameC, FrameB } from "../assets";
 
 const products  = [
   {
-    id: 1,
+    id: 11,
      name: "CASSTURBO HD SAE40 API CF/SF",
     description: "Heavy duty Mono-grade mineral engine oil",
     image: FrameL,
   },
   {
-    id: 2,
+    id: 15,
     name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     description: "Fleet multigrade diesel engine oil designed to provide superior performanc for trucks, buses, light commercial vehicle.",
     image: FrameK,
   },
 
   {
-    id: 3,
+    id: 12,
     name: "CASSTURBO HD ULTRA 15W40 CI-4",
     description: "Long drain premium performance Multigrade diesel engine oil designed for modern heavy duty engine",
     image: FrameC,
   },
   {
-    id: 4,
+    id: 16,
     name: "CASSTURBO HD FORCE 15W40 CH-4",
     description: "Superior Performance Multigrade diesel engine oil designed with active protection",
     image: FrameB,

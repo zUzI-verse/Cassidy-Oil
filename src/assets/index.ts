@@ -16,5 +16,9 @@ export {default as FrameO } from "./FrameO.png";
 export {default as FrameP } from "./FrameP.png";
 export {default as FrameQ } from "./FrameQ.png";
 export {default as FrameR } from "./FrameR.png";
+export {default as FrameS } from "./FrameS.png";
 export {default as FrameU } from "./FrameU.png";
-export {default as FrameV } from "./FrameV.png";
+export {default as FrameV} from "./FrameV.png";
+
+
+
