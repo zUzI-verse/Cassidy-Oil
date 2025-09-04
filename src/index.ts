@@ -19,6 +19,13 @@ export {default as FrameR } from "./FrameR.png";
 export {default as FrameS } from "./FrameS.png";
 export {default as FrameU } from "./FrameU.png";
 export {default as FrameV} from "./FrameV.png";
+export {default as FrameW} from "./FrameW.png";
+export {default as BannerA} from "./BannerA.png";
+export {default as BannerB} from "./BannerB.png";
+export {default as BannerC} from "./BannerC.png";  
+export {default as blueBottle} from "./blueBottle.png";
+export {default as BgAuto} from "./bg-auto.png";
+
 
 
 
