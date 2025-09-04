@@ -19,7 +19,7 @@ import {
   FrameS,
   FrameU,
   FrameV,
-} from "..";
+} from "../assets";
 
 
 

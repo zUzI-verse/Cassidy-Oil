@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // import BgAuto from "../assets/BgAuto.png";
-import { FrameF, FrameG } from "..";
+import { FrameF, FrameG } from "../assets";
 
 const products = [
   {

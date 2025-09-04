@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { BannerA, BannerB, BannerC, FrameP, blueBottle } from "..";
+import { BannerA, BannerB, BannerC, FrameP, blueBottle } from "../assets";
 
 type Slide = {
   image: string;

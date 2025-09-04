@@ -8,7 +8,7 @@ import {
   FrameU,
   FrameS,
   FrameV,
-} from "..";
+} from "../assets";
 
 const products = [
   {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FrameA, FrameM } from "..";
+import { FrameA, FrameM } from "../assets";
 
 const products = [
   {

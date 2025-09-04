@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
-import { BgAuto } from "../..";
+// import { BgAuto } from "../../assets";
 
 const CasstekPrem = () => {
   const { id } = useParams<{ id: string }>(); // Get product id from URL
@@ -38,7 +38,7 @@ const CasstekPrem = () => {
       {/*Hero Banner*/}
       <section
         className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 "
-        style={{ backgroundImage: `url(${BgAuto})` }}
+        style={{ backgroundImage: `url(/assets/bg-auto.png)` }}
       >
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div>
