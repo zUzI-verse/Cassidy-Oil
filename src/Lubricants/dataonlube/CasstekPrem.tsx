@@ -9,7 +9,7 @@ const CasstekPrem = () => {
   if (!product) {
     return <p className="text-center mt-10 text-red-500">Product not found</p>;
   }
-
+ 
   const testData = [
     { parameter: "Appearance", method: "Visual", value: "Clear" },
     { parameter: "Colour", method: "Visual", value: "Brown" },
