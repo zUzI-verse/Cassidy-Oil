@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
-// import { BgAuto } from "../../assets";
+
 
 const CasstekPrem = () => {
   const { id } = useParams<{ id: string }>(); // Get product id from URL

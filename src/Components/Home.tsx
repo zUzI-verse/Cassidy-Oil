@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { BannerA, BannerB, BannerC, FrameP, blueBottle } from "../assets";
+import { BannerA, BannerB, BannerC, FrameP, blueBottle, MechA, MechB, MechC } from "../assets";
 
 type Slide = {
   image: string;
@@ -194,17 +194,17 @@ const Home = () => {
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <img
-            src="/images/engine-1.jpg"
+            src={MechA}
             alt="Mechanic working"
             className="rounded-md shadow-md object-cover"
           />
           <img
-            src="/images/engine-2.jpg"
+            src={MechB}
             alt="Mechanic explaining"
             className="rounded-md shadow-md object-cover"
           />
           <img
-            src="/images/engine-3.jpg"
+            src={MechC}
             alt="Oil product by car"
             className="rounded-md shadow-md object-cover"
           />
@@ -212,20 +212,20 @@ const Home = () => {
       </section>
 
       {/* Subscription Section */}
-      <section className="bg-blue-950 text-white py-16 px-6">
+      <section className="bg-[#152C41] text-white rounded-md py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Subscribe to get the latest updates
+            Subscribe to get <br /> the latest updates
           </h3>
-          <form className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+          <form className="flex flex-col sm:flex-row  justify-center gap-4 mt-6 w-2/3" >
             <input
               type="email"
               placeholder="Your email"
-              className="flex-1 min-w-[250px] px-4 py-3 rounded-md text-black focus:outline-none"
+              className="flex-1 min-w-[250px] px-4 py-5 rounded-md border-1 text-white bg-[#1A2834] focus:outline-none"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-orange-500 font-semibold rounded-md shadow hover:bg-orange-600 transition"
+              className="px-6 py-3 bg-orange-500 font-semibold rounded-md shadow hover:bg-orange-600 text-[#152C41] transition"
             >
               Subscribe
             </button>

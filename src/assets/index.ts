@@ -24,7 +24,9 @@ export {default as BannerA} from "./BannerA.png";
 export {default as BannerB} from "./BannerB.png";
 export {default as BannerC} from "./BannerC.png";  
 export {default as blueBottle} from "./blueBottle.png";
-
+export {default as MechA} from "./MechA.png";
+export {default as MechB} from "./MechB.png";
+export {default as MechC} from "./MechC.png";
 
 
 
