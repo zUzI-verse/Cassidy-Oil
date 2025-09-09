@@ -30,6 +30,7 @@ type Product = {
   image: string;
   noButton?: boolean;
   // isPremium: boolean;
+  productBenefits?: string[]; //after adding it to all of them remove the ?
   descriptions: string;
   performance: string;
   applications: string;
@@ -196,6 +197,7 @@ const products: Product[] = [
       "Multivehicle automatics transmission fluid and power steering fluid",
     image: FrameC,
     // isPremium: true,
+    productBenefits:[ "Apple", "Bannana", "Orange", "Mango"],  
      descriptions: "CASSTURBO HD ULTRA 15W40 CI-4 is a high-performance diesel engine oil that provides protection of turbocharged and naturally aspirated diesel engines operating on and off highway conditions. This high-quality multigrade formulation is developed to provide optimal lubrication in any operating condition, temperature and operating speeds. CASSTURBO HD ULTRA 15W40 CI-4 ensures engine and oil durability as it is formulated from superior quality high viscosity index base oil and superior additive technology. CASSTURBO HD ULTRA 15W40 CI-4 is designed to work optimally under extreme operating loads and ensures lesser oil degradation compared to other oils.",
     performance: "Meets the requirements of SAE 15W-40, API CI-4",
     applications: "CASSTURBO HD ULTRA 15W40 CI-4 can be used in light and heavy commercial cars, Sports Utility Vehicles, Multi-Utility Vehicles, generators, and other vehicles used in truck fleet, mining, construction, quarrying, agriculture etc. that use diesel as the primary fuel source. OEM recommended oil drain interval is to be followed.",

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { BannerA, BannerB, BannerC, FrameP, blueBottle, MechA, MechB, MechC } from "../assets";
+import NewsSection from "./NewsSection";
+
 
 type Slide = {
   image: string;
@@ -43,8 +45,7 @@ const Home = () => {
             transition={{ duration: 0.4 }}
             className="absolute inset-0 bg-cover bg-center"
           >
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/40"></div>
+      
             {/* Text content*/}
             <div className="absolute bottom-20 left-10 text-white max-w-xl">
               <motion.h1
@@ -66,7 +67,7 @@ const Home = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full ${
-                index === current ? "bg-white" : "bg-gray-400"
+                index === current ? "bg-primary" : "bg-gray-400"
               }`}
             ></button>
           ))}
@@ -76,9 +77,13 @@ const Home = () => {
       <section className="grid md:grid-cols-2 gap-10 items-center px-8 py-16 max-w-6xl mx-auto">
         {/* Text Content */}
         <div>
-          <p className="uppercase text-orange-500 tracking-wide font-semibold mb-2">
+          <div className="flex items-center gap-5 mb-4">
+             {/* Decorative line and subtitle */}
+             <div className="border w-15  mb-2 h-0.5 text-primary bg-primary"></div>
+          <p className="uppercase text-navgrey tracking-wide font-semibold mb-2">
             Know About Us
           </p>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             At Cassidy Energy, we&apos;re passionate about engines
           </h2>
@@ -88,7 +93,7 @@ const Home = () => {
             performance. That’s why we’re dedicated to producing the finest
             engine oils on the market.
           </p>
-          <button className="px-6 py-3 bg-orange-500 text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
+          <button className="px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
             Learn more
           </button>
         </div>
@@ -106,9 +111,13 @@ const Home = () => {
       <section className="grid md:grid-cols-2 gap-10 items-center px-8 py-16 bg-gray-50 max-w-6xl mx-auto">
         {/* Text Content */}
         <div>
-          <p className="uppercase text-orange-500 tracking-wide font-semibold mb-2">
-            What We Do
-          </p>
+          <div className="flex items-center gap-5 mb-4">
+              <div className="border w-15 h-0.5  text-primary  mb-2 bg-primary"></div>
+              <p className="uppercase text-black font-semibold mb-2 tracking-wide">
+                What We Do
+              </p>
+          </div>
+          
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Our Range of Products
           </h2>
@@ -124,7 +133,7 @@ const Home = () => {
           {/* Product list */}
           <ul className="space-y-4">
             <li>
-              <span className="text-orange-500 font-bold">■</span>{" "}
+              <span className="text-primary font-bold">■</span>{" "}
               <span className="font-semibold">
                 CASSTEK PREMIUM 4T 20W-40 API SL/MA2
               </span>{" "}
@@ -133,7 +142,7 @@ const Home = () => {
               </p>
             </li>
             <li>
-              <span className="text-orange-500 font-bold">■</span>{" "}
+              <span className="text-primary font-bold">■</span>{" "}
               <span className="font-semibold">
                 CASSTEK MOTO 4T 20W-40 API SF/CF
               </span>{" "}
@@ -142,7 +151,7 @@ const Home = () => {
               </p>
             </li>
             <li>
-              <span className="text-orange-500 font-bold">■</span>{" "}
+              <span className="text-primary font-bold">■</span>{" "}
               <span className="font-semibold">
                 CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF
               </span>{" "}
@@ -151,7 +160,7 @@ const Home = () => {
               </p>
             </li>
             <li>
-              <span className="text-orange-500 font-bold">■</span>{" "}
+              <span className="text-primary font-bold">■</span>{" "}
               <span className="font-semibold">
                 CASSGOLD POWER MOTOR OIL SAE40 API SF/CF
               </span>{" "}
@@ -163,7 +172,7 @@ const Home = () => {
 
           {/* CTA Button */}
           <Link to="/lubricants">
-            <button className="mt-6 px-6 py-3 bg-orange-500 text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
+            <button className="mt-6 px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
               See lubricants
             </button>
           </Link>
@@ -183,7 +192,7 @@ const Home = () => {
       <section className="px-8 py-16 max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Protect Your Engine with <br />
-          <span className="text-blue-900">Cassidy standard oil</span>
+          Cassidy standard oil
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
           Whether you&apos;re a seasoned mechanic or a casual car enthusiast, we
@@ -194,12 +203,12 @@ const Home = () => {
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <img
-            src={MechA}
+            src={MechB}
             alt="Mechanic working"
             className="rounded-md shadow-md object-cover"
           />
           <img
-            src={MechB}
+            src={MechA}
             alt="Mechanic explaining"
             className="rounded-md shadow-md object-cover"
           />
@@ -212,26 +221,31 @@ const Home = () => {
       </section>
 
       {/* Subscription Section */}
-      <section className="bg-[#152C41] text-white rounded-md py-16 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className=" text-white py-16 px-6 rounded-lg  bg-cover w-full md:w-[1165.2px] mx-5 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
+        <div className="max-w-3xl mx-auto text-center ">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Subscribe to get <br /> the latest updates
+            Subscribe to get <br/> the latest updates
           </h3>
-          <form className="flex flex-col sm:flex-row  justify-center gap-4 mt-6 w-2/3" >
-            <input
+          <form className="flex flex-col sm:flex-col mx-auto  justify-center gap-4 mt-6 w-2/3" >
+          <div className="flex">
+             <input
               type="email"
               placeholder="Your email"
-              className="flex-1 min-w-[250px] px-4 py-5 rounded-md border-1 text-white bg-[#1A2834] focus:outline-none"
+              className="flex-1 min-w-[250px] px-4 py-5 rounded-md border-1 text-white bg-secondary focus:outline-none"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-orange-500 font-semibold rounded-md shadow hover:bg-orange-600 text-[#152C41] transition"
+              className="px-6 py-5 bg-primaryb font-semibold rounded-sm shadow hover:bg-orange-400 text-[#152C41] transition"
             >
               Subscribe
             </button>
+          </div>         
           </form>
         </div>
       </section>
+
+      {/* News Section */}
+      <NewsSection />
     </div>
   );
 };

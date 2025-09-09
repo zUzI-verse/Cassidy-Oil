@@ -27,6 +27,10 @@ export {default as blueBottle} from "./blueBottle.png";
 export {default as MechA} from "./MechA.png";
 export {default as MechB} from "./MechB.png";
 export {default as MechC} from "./MechC.png";
+export {default as ThumbnailA} from "./ThumbnailA.png";
+export {default as ThumbnailB} from "./ThumbnailB.png";
+export {default as ThumbnailC} from "./ThumbnailC.png";
+export {default as ThumbnailD} from "./ThumbnailD.png";
 
 
 

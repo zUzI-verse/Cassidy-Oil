@@ -13,21 +13,9 @@ const CasstekPrem = () => {
   const testData = [
     { parameter: "Appearance", method: "Visual", value: "Clear" },
     { parameter: "Colour", method: "Visual", value: "Brown" },
-    {
-      parameter: "Density at 300C (g/ml)",
-      method: "ASTM D 1298",
-      value: "858",
-    },
-    {
-      parameter: "Kinematic Viscosity at 400C (cSt)",
-      method: "ASTM D445",
-      value: "130",
-    },
-    {
-      parameter: "Kinematic Viscosity at 1000C (cSt)",
-      method: "ASTM D445",
-      value: "14.8",
-    },
+    { parameter: "Density at 300C (g/ml)",  method: "ASTM D 1298",  value: "858",    },
+    {parameter: "Kinematic Viscosity at 400C (cSt)",method: "ASTM D445",value: "130",},
+    { parameter: "Kinematic Viscosity at 1000C (cSt)", method: "ASTM D445", value: "14.8", },
     { parameter: "Viscosity Index", method: "ASTM D 2270", value: "115" },
     { parameter: "Pour Point (0C)", method: "ASTM D 97", value: "-21" },
     { parameter: "Flash Point (COC) (0C)", method: "ASTM D 93", value: "240" },
@@ -48,7 +36,7 @@ const CasstekPrem = () => {
 
       {/*Breadcrumb navbar*/}
       <div className="container mx-auto px-6 py-4 text-sm text-gray-600">
-        <a href="/" className="hover:text-orange-500">
+        <a href="/" className="hover:text-color-primary">
           Home
         </a>
         <span className="mx-2">/</span>
@@ -87,20 +75,9 @@ const CasstekPrem = () => {
           <section>
             <h2 className="text-xl font-semibold mb-4">PRODUCT BENEFITS</h2>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>
-                Enhanced protection of engine parts at the point of engine start
-                up.
-              </li>
-              <li>
-                Reduced propensity of sludge deposits which ensures superior
-                engine cleanliness during normal operation.
-              </li>
-              <li>
-                Reduced propensity of oil thickening and oxidation thereby
-                reducing oil consumption under normal operating conditions.
-              </li>
-              <li>Reduced Disc wear and Valve Train wear.</li>
-              <li>Excellent corrosion protection, even when engine is off.</li>
+              {product.productBenefits?.map((benefit, index) => (
+                <li key={index}>{benefit}</li>
+              ))}
             </ul>
           </section>
 

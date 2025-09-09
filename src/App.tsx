@@ -16,7 +16,7 @@ import CasstekPrem from "./Lubricants/dataonlube/CasstekPrem";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-white">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

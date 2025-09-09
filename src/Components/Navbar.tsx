@@ -1,13 +1,14 @@
 import Group from "../assets/Group.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <nav className="w-full bg-white shadow-sm">
+    <nav className="w-full bg-white ">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
        {/* Logo */}
       <Link to="/">
@@ -17,39 +18,39 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10 text-base">
           <li>
-            <Link
+            <NavLink
               to="/"
-              className="text-[#002b36] font-semibold hover:text-[#002b36]"
+              className= {({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               to="/about-us"
-              className="text-[#002b36] font-semibold hover:text-[#002b36]"
+              className={({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               About Us
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               to="/lubricants"
-              className="text-[#002b36] font-semibold hover:text-[#002b36]"
+              className={({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               Lubricants
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               to="/contact"
-              className="text-[#002b36] font-semibold hover:text-[#002b36]"
+              className={({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
 

@@ -32,12 +32,12 @@ const AllLubricants = () => {
     <div>
       {/*Hero Banner*/}
       <section
-        className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 "
+        className="relative bg-cover w-full m-0 bg-center text-white text-center py-25 h-64 "
         style={{ backgroundImage: `url(/assets/bg-auto.png)` }}
       >
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+       
         <div>
-          <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
+          <h2 className="text-4xl text-center font-bold">Automatic Lubricants</h2>
         </div>
       </section>
 
