@@ -38,10 +38,9 @@ const HeavyDutyEngineOil = () => {
     <div>
       {/*Hero Banner*/}
       <section
-        className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 "
+        className="relative bg-cover w-full m-0 bg-center text-white text-center py-38 h-64 "
         style={{ backgroundImage: `url(/assets/bg-auto.png)` }}
       >
-        <div className="absolute inset-0 bg-black opacity-20"></div>
         <div>
           <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
         </div>
@@ -49,17 +48,13 @@ const HeavyDutyEngineOil = () => {
 
       {/* Breadcrumb */}
       <div className="container mx-auto px-6 py-4 text-sm text-gray-600">
-        <a href="/" className="hover:text-orange-500">
-          Home
-        </a>
+        <Link to="/" className="text-navgrey font-medium ">
+          HOME
+        </Link>
         <span className="mx-2">/</span>
-        <a href="/lubricants" className="hover:text-orange-500">
-          Lubricants
-        </a>
-        <span className="mx-2">/</span>
-        <span className="text-orange-500 font-medium">
-          Heavy Duty Engine Oil
-        </span>
+        <Link to="/lubricants" className="text font-medium">
+          LUBRICANTS
+        </Link>
       </div>
 
       {/* Main Content */}
@@ -69,14 +64,14 @@ const HeavyDutyEngineOil = () => {
           <aside className="w-1/4">
             <ul className="space-y-3">
               <li>
-                <Link to="/lubricants" className="hover:text-orange-500">
+                <Link to="/lubricants" className="font-medium">
                   All
                 </Link>
               </li>
               <li>
                 <Link
                   to="/lubricants/bike-oils"
-                  className="hover:text-orange-500"
+                  className="font-medium"
                 >
                   Bike Oils
                 </Link>
@@ -84,7 +79,7 @@ const HeavyDutyEngineOil = () => {
               <li>
                 <Link
                   to="/lubricants/petrol-engine-oil"
-                  className="hover:text-orange-500"
+                  className="font-medium"
                 >
                   Petrol Engine Oil
                 </Link>
@@ -92,7 +87,7 @@ const HeavyDutyEngineOil = () => {
               <li>
                 <Link
                   to="/lubricants/diesel-engine-oil"
-                  className="hover:text-orange-500"
+                  className="font-medium"
                 >
                   Diesel Engine Oil
                 </Link>
@@ -100,7 +95,7 @@ const HeavyDutyEngineOil = () => {
               <li>
                 <Link
                   to="/lubricants/transmission-oil"
-                  className="hover:text-orange-500"
+                  className="font-medium"
                 >
                   Transmission Oil
                 </Link>
@@ -108,7 +103,7 @@ const HeavyDutyEngineOil = () => {
               <li>
                 <Link
                   to="/lubricants/heavy-duty-engine-oil"
-                  className="text-orange-500 font-bold"
+                  className="text-primary font-bold"
                 >
                   Heavy Duty Engine Oils
                 </Link>
@@ -117,11 +112,11 @@ const HeavyDutyEngineOil = () => {
           </aside>
 
           {/* Products */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-3/4">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
             {products.map((product) => (
               <div
                 key={product.id}
-                className=" rounded-lg shadow-md overflow-hidden bg-white"
+                className=" rounded-lg  overflow-hidden bg-white"
               >
                 <img
                   src={product.image}

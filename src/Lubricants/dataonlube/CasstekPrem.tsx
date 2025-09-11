@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
+import { Link } from "react-router-dom";
 
 
 const CasstekPrem = () => {
@@ -25,26 +26,25 @@ const CasstekPrem = () => {
     <div className="w-full">
       {/*Hero Banner*/}
       <section
-        className="relative bg-cover w-full m-0 bg-center text-white text-center p-32 h-64 "
+        className="relative bg-cover w-full m-0 bg-center text-white text-center p-25 h-64 "
         style={{ backgroundImage: `url(/assets/bg-auto.png)` }}
       >
-        <div className="absolute inset-0 bg-black opacity-20"></div>
         <div>
           <h2 className="text-4xl font-bold">Automatic Lubricants</h2>
         </div>
       </section>
 
       {/*Breadcrumb navbar*/}
-      <div className="container mx-auto px-6 py-4 text-sm text-gray-600">
-        <a href="/" className="hover:text-color-primary">
-          Home
-        </a>
-        <span className="mx-2">/</span>
-        <a href="/lubricants" className="hover:text-orange-500">
-          Lubricants
-        </a>
-        <span className="mx-2">/</span>
-        <span className="text-orange-500 font-medium">{product.name}</span>
+      <div className="container mx-auto px-6 py-4 text-sm text-navgrey">
+        <Link to="/" className="hover:text-color-primary font-medium">
+        HOME
+      </Link>
+      <span className="mx-2 font-medium">/</span>
+      <Link to="/lubricants" className="hover:text-primary font-medium">
+        LUBRICANTS
+      </Link>
+      <span className="mx-2 font-medium">/</span>
+      <span className="text-black font-medium">{product.name}</span>
       </div>
 
       {/* Main Content */}
@@ -74,9 +74,9 @@ const CasstekPrem = () => {
           {/* Product Benefits */}
           <section>
             <h2 className="text-xl font-semibold mb-4">PRODUCT BENEFITS</h2>
-            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+            <ul className="list-disc pl-6 space-y-2">
               {product.productBenefits?.map((benefit, index) => (
-                <li key={index}>{benefit}</li>
+                <li className="marker:text-primary  text-gray-700" key={index}>{benefit}</li>
               ))}
             </ul>
           </section>
@@ -123,7 +123,7 @@ const CasstekPrem = () => {
           <img
             src={product.image}
             alt={product.name}
-            className="w-64 h-64 object-contain rounded-lg shadow-lg"
+            className="w-100 h-78 object-contain m-0 p-0 "
           />
         </div>
       </div>

@@ -67,7 +67,7 @@ const Home = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full ${
-                index === current ? "bg-primary" : "bg-gray-400"
+                index === current ? "bg-primary w-4 h-4 " : "bg-gray-400 mt-1"
               }`}
             ></button>
           ))}
@@ -84,10 +84,11 @@ const Home = () => {
             Know About Us
           </p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="ml-20">
+             <h2 className="text-3xl md:text-4xl font-bold mb-4">
             At Cassidy Energy, we&apos;re passionate about engines
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 w-[600px] leading-relaxed">
             With years of experience in the industry, we understand the
             importance of using high-quality oil to protect and enhance engine
             performance. That’s why we’re dedicated to producing the finest
@@ -96,9 +97,11 @@ const Home = () => {
           <button className="px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
             Learn more
           </button>
+          </div>
+         
         </div>
         {/* Image Content */}
-        <div className="flex-1">
+        <div className="flex-1  ml-10">
           <img
             src={blueBottle}
             alt="Cassidy Product"
@@ -108,7 +111,7 @@ const Home = () => {
       </section>
 
       {/* Products Section */}
-      <section className="grid md:grid-cols-2 gap-10 items-center px-8 py-16 bg-gray-50 max-w-6xl mx-auto">
+      <section className="grid md:grid-cols-2 gap-10 items-center px-18 py-18 bg-gray-50 w-full ">
         {/* Text Content */}
         <div>
           <div className="flex items-center gap-5 mb-4">
@@ -117,11 +120,11 @@ const Home = () => {
                 What We Do
               </p>
           </div>
-          
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="ml-20">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Our Range of Products
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 w-[600px]  leading-relaxed">
             At Cassidy Energy, we offer a wide range of high-quality engine oils
             to suit all types of vehicles. Whether you&apos;re driving a daily
             car, riding a motorcycle, or operating heavy machinery, we have the
@@ -131,59 +134,61 @@ const Home = () => {
           </p>
 
           {/* Product list */}
-          <ul className="space-y-4">
+          <ul className="space-y-10">
             <li>
-              <span className="text-primary font-bold">■</span>{" "}
-              <span className="font-semibold">
+               <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+              <span className="font-extrabold ml-4.5">
                 CASSTEK PREMIUM 4T 20W-40 API SL/MA2
               </span>{" "}
-              <p className="text-gray-600 text-sm">
-                Premium Motorcycle Oil for superior engine care.
+              <p className="text-gray-600 text-sm ml-9 ">
+                Premium Multigrade Okada, Kekenapep engine oil
               </p>
             </li>
             <li>
-              <span className="text-primary font-bold">■</span>{" "}
-              <span className="font-semibold">
+             <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+              <span className="font-extrabold ml-4.5">
                 CASSTEK MOTO 4T 20W-40 API SF/CF
               </span>{" "}
-              <p className="text-gray-600 text-sm">
-                High Performance Motorcycle Oil ensuring smooth rides.
+              <p className="text-gray-600 text-sm ml-9">
+                High Performance Multigrade Okada, Kekenapep engine oil
               </p>
             </li>
             <li>
-              <span className="text-primary font-bold">■</span>{" "}
-              <span className="font-semibold">
+              <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+              <span className="font-extrabold ml-4.5">
                 CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF
               </span>{" "}
-              <p className="text-gray-600 text-sm">
-                Superior protection against sludge & deposits.
+              <p className="text-gray-600 text-sm ml-9">
+                Super Performance Multigrade designed with deposit guard technology 
               </p>
             </li>
             <li>
-              <span className="text-primary font-bold">■</span>{" "}
-              <span className="font-semibold">
+              <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+              <span className="font-extrabold ml-4.5">
                 CASSGOLD POWER MOTOR OIL SAE40 API SF/CF
               </span>{" "}
-              <p className="text-gray-600 text-sm">
-                High Performance mono-grade oil for powerful engines.
+              <p className="text-gray-600 text-sm ml-9">
+                High Performance mono grade mineral engine oil
               </p>
             </li>
           </ul>
 
           {/* CTA Button */}
           <Link to="/lubricants">
-            <button className="mt-6 px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
+            <button className="mt-15 px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
               See lubricants
             </button>
           </Link>
         </div>
+        </div>
+          
 
         {/* Images */}
-        <div className="flex justify-center mt-80">
+        <div className="flex justify-center mt-45 ml-10">
           <img
             src={FrameP}
             alt="Cassidy Oil Products"
-            className="w-80 md:w-[450px] object-contain"
+            className="w-[696.30291748046880] h-[391px] md:w-[450px] object-contain"
           />
         </div>
       </section>
@@ -221,7 +226,7 @@ const Home = () => {
       </section>
 
       {/* Subscription Section */}
-      <section className=" text-white py-16 px-6 rounded-lg  bg-cover w-full md:w-[1165.2px] mx-5 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
+      <section className=" text-white py-16 px-6 rounded-lg bg-cover w-full md:w-[1165.2px] mx-5 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
         <div className="max-w-3xl mx-auto text-center ">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Subscribe to get <br/> the latest updates

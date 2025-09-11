@@ -22,7 +22,9 @@ export {default as FrameV} from "./FrameV.png";
 export {default as FrameW} from "./FrameW.png";
 export {default as BannerA} from "./BannerA.png";
 export {default as BannerB} from "./BannerB.png";
-export {default as BannerC} from "./BannerC.png";  
+export {default as BannerC} from "./BannerC.png"; 
+export {default as BannerBb} from "./BannerBb.png";
+export {default as BannerCc} from "./BannerCc.png"
 export {default as blueBottle} from "./blueBottle.png";
 export {default as MechA} from "./MechA.png";
 export {default as MechB} from "./MechB.png";
@@ -31,6 +33,7 @@ export {default as ThumbnailA} from "./ThumbnailA.png";
 export {default as ThumbnailB} from "./ThumbnailB.png";
 export {default as ThumbnailC} from "./ThumbnailC.png";
 export {default as ThumbnailD} from "./ThumbnailD.png";
+export {default as OilAbout} from "./OilAbout.png"
 
 
 

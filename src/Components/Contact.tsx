@@ -2,10 +2,10 @@
 
 const Contact = () => {
   return (
-     <section className="w-full bg-white py-10">
+     <section className="w-full bg-white">
       {/* Header */}
-      <div className="bg-gray-200 py-6 text-center">
-        <h2 className="text-2xl font-bold text-gray-800">Contact Us</h2>
+      <div className="bg-secondaryb py-16 text-center">
+        <h1 className="text-4xl font-bold text-[#777777] ">Contact Us</h1>
       </div>
 
       {/* Form */}
@@ -13,15 +13,16 @@ const Contact = () => {
         <form className="space-y-6">
           {/* Name Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
             <input
               type="text"
               placeholder="First Name"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none bg-secondaryb"
             />
             <input
               type="text"
               placeholder="Last Name"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none bg-secondaryb"
             />
           </div>
 
@@ -30,12 +31,12 @@ const Contact = () => {
             <input
               type="tel"
               placeholder="Phone Number"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none bg-secondaryb"
             />
             <input
               type="email"
               placeholder="Email Address"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none bg-secondaryb"
             />
           </div>
 
@@ -43,13 +44,13 @@ const Contact = () => {
           <textarea
             placeholder="Type message"
             rows={6}
-            className="border border-gray-300 rounded-md p-3 w-full resize-none focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="border border-gray-300 rounded-md p-3 w-full resize-none focus:outline-none  bg-secondaryb"
           ></textarea>
 
           {/* Button */}
           <button
             type="submit"
-            className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-8 rounded-md transition-colors duration-300"
+            className="bg-primary hover:bg-primaryb text-white font-semibold py-3 px-8 rounded-md mb-30 w-[400px] cursor-pointer"
           >
             Send
           </button>

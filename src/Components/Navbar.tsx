@@ -20,7 +20,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
-              className= {({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
+              className= {({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               Home
             </NavLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/about-us"
-              className={({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
+              className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               About Us
             </NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/lubricants"
-              className={({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
+              className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
               Lubricants
             </NavLink>
@@ -47,9 +47,9 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/contact"
-              className={({isActive})=> isActive ? "text-secondary font-semibold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
+              className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
             >
-              Contact
+              Contact Us
             </NavLink>
           </li>
         </ul>
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className="text-[#002b36] font-semibold hover:text-[#002b36]"
+                className="text-[#002b36] font-bold hover:text-[#002b36]"
               >
                 Home
               </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about-us"
-                className="text-[#002b36] font-semibold hover:text-[#002b36]"
+                className="text-[#002b36] font-bold hover:text-[#002b36]"
               >
                 About Us
               </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/lubricants"
-                className="text-[#002b36] font-semibold hover:text-[#002b36]"
+                className="text-[#002b36] font-bold hover:text-[#002b36]"
               >
                 Lubricants
               </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                className="text-[#002b36] font-semibold hover:text-[#002b36]"
+                className="text-[#002b36] font-bold hover:text-[#002b36]"
               >
                 Contact
               </Link>
