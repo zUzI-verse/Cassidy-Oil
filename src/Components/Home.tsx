@@ -42,7 +42,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.3 }}
             className="absolute inset-0 bg-cover bg-center"
           >
       
@@ -94,14 +94,18 @@ const Home = () => {
             performance. That’s why we’re dedicated to producing the finest
             engine oils on the market.
           </p>
+          <Link to="/about-us">
           <button className="px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
             Learn more
           </button>
+          </Link>
           </div>
+          
+          
          
         </div>
         {/* Image Content */}
-        <div className="flex-1  ml-10">
+        <div className="flex-1 ml-10">
           <img
             src={blueBottle}
             alt="Cassidy Product"
@@ -226,7 +230,7 @@ const Home = () => {
       </section>
 
       {/* Subscription Section */}
-      <section className=" text-white py-16 px-6 rounded-lg bg-cover w-full md:w-[1165.2px] mx-5 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
+    <section className=" text-white py-16 px-6 rounded-lg bg-cover w-[1110px] mx-10 mb-10 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
         <div className="max-w-3xl mx-auto text-center ">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Subscribe to get <br/> the latest updates
@@ -241,8 +245,7 @@ const Home = () => {
             <button
               type="submit"
               className="px-6 py-5 bg-primaryb font-semibold rounded-sm shadow hover:bg-orange-400 text-[#152C41] transition"
-            >
-              Subscribe
+            > Subscribe
             </button>
           </div>         
           </form>

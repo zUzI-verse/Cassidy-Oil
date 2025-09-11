@@ -33,7 +33,8 @@ export {default as ThumbnailA} from "./ThumbnailA.png";
 export {default as ThumbnailB} from "./ThumbnailB.png";
 export {default as ThumbnailC} from "./ThumbnailC.png";
 export {default as ThumbnailD} from "./ThumbnailD.png";
-export {default as OilAbout} from "./OilAbout.png"
+export {default as OilAbout} from "./OilAbout.png";
+export {default as AboutBottle} from "./AboutBottle.png";
 
 
 
