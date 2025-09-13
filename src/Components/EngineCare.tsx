@@ -1,43 +1,11 @@
-import React, { useState, useRef } from "react";
+
 import { MechA, MechB, MechC } from "../assets";
 
 
 const EngineCare: React.FC = () => {
   const images = [MechB, MechA, MechC];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
-
-// Swipe logic
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
- const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    touchEndX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    const distance = touchStartX.current - touchEndX.current;
-    if (distance > 50) {
-      nextSlide();
-    } else if (distance < -50) {
-      prevSlide();
-    }
-  };
-
-
-  return (
+ 
+ return (
     <section className="px-8 py-16 max-w-6xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Protect Your Engine with <br />
@@ -49,30 +17,28 @@ const handleTouchStart = (e: React.TouchEvent) => {
         engine.
       </p>
 
-      {/* Mobile View: Swipe Slider */}
+      {/* Mobile View: Horizontal Scroll Slider */}
       <div
-        className="relative w-full overflow-hidden md:hidden"
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
+        className="
+          flex space-x-4 overflow-x-auto snap-x snap-mandatory
+          [-ms-overflow-style:none] [scrollbar-width:none]
+          [&::-webkit-scrollbar]:hidden
+          md:hidden
+        "
       >
-        <div
-          className="flex transition-transform ease-in-out duration-500"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((img, idx) => (
+        {images.map((img, idx) => (
+          <div key={idx} className="flex-shrink-0 w-72 snap-center">
             <img
-              key={idx}
               src={img}
               alt={`slide-${idx}`}
-              className="w-full h-64 object-cover  flex-shrink-0 rounded-md shadow-md"
+              className="w-full h-64 object-cover rounded-md shadow-md"
             />
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
       {/* Desktop View: Grid */}
-      <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
         <img
           src={MechB}
           alt="Mechanic working"
@@ -90,7 +56,7 @@ const handleTouchStart = (e: React.TouchEvent) => {
         />
       </div>
     </section>
-  );
+ );
 };
 
 export default EngineCare;
