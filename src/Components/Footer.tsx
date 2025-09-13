@@ -1,66 +1,162 @@
-
 import Footerlogo from "../assets/FooterLogo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#152C41] text-white py-15 h-[365.9px]">
-      {/* Top Content */ }
-      <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-[#152C41] text-white py-10">
+      {/* MOBILE LAYOUT */}
+      <div className="md:hidden max-w-7xl mx-auto px-6">
         {/* Logo */}
-           <div className="mb-25 rounded-r-full w-37">
-           <Link to = "/">
-            <img src={Footerlogo}
-            alt="Cassidy Oil"
-              className="w-32 mb-1"/>
-           </Link>
+        <div>
+          <Link to="/">
+            <img src={Footerlogo} alt="Cassidy Energy" className="w-28 mb-6" />
+          </Link>
         </div>
 
-        {/* Company*/}
-        <div>
-            <h3 className="font-bold mb-4">Company</h3>
+        {/* Company + Connect side-by-side */}
+        <div className="flex items-start justify-between gap-8">
+          {/* Company */}
+          <div className="flex-1 min-w-[9rem]">
+            <h3 className="font-bold mb-3">Company</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-            <li className="my-6"><Link to="/about-us">About Us</Link></li>
-            <li className="my-6"><Link to="/lubricants"> Lubricant</Link></li>
-            <li className="my-6"><Link to="/contact">Contact</Link></li></ul>
-        </div> 
-          
+              <li>
+                <Link to="/about-us" className="hover:underline">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/lubricants" className="hover:underline">
+                  Lubricants
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:underline">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-        
+          {/* Connect */}
+          <div className="flex-1 min-w-[9rem]">
+            <h3 className="font-bold mb-3">Connect</h3>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <Link to="#" className="hover:underline">
+                  Facebook
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className="hover:underline">
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className="hover:underline">
+                  Twitter
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className="hover:underline">
+                  LinkedIn
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Find Us centered beneath */}
+        <div className="mt-8 text-center">
+          <h3 className="font-bold mb-3">Find Us</h3>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            Amazing Grace Plaza, by New Extension
+            <br />
+            BBA Tradefair Lagos–Badagry Expressway
+          </p>
+        </div>
+      </div>
+
+      {/* DESKTOP LAYOUT */}
+      <div className="hidden md:grid max-w-7xl mx-auto px-12 grid-cols-4 gap-8">
+        {/* Logo */}
+        <div className="flex flex-col">
+          <Link to="/">
+            <img src={Footerlogo} alt="Cassidy Energy" className="w-32 mb-4" />
+          </Link>
+        </div>
+
+        {/* Company */}
+        <div>
+          <h3 className="font-bold mb-4">Company</h3>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>
+              <Link to="/about-us" className="hover:underline">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/lubricants" className="hover:underline">
+                Lubricants
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:underline">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+
         {/* Connect */}
         <div>
           <h3 className="font-bold mb-4">Connect</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li className="my-6"><Link to="#">Facebook</Link></li>
-            <li className="my-6"><Link to="#">Instagram</Link></li>
-            <li className="my-6"><Link to="#">Twitter</Link></li>
-            <li className="my-6"><Link to="#">LinkedIn</Link></li>
+            <li>
+              <Link to="#" className="hover:underline">
+                Facebook
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:underline">
+                Instagram
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:underline">
+                Twitter
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:underline">
+                LinkedIn
+              </Link>
+            </li>
           </ul>
         </div>
 
         {/* Find Us */}
-         <div>
+        <div>
           <h3 className="font-bold mb-4">Find Us</h3>
-          <p className="text-sm  text-gray-300">
-            Amazing Grace Plaza, by New Extension <br />
+          <p className="text-sm text-gray-300 leading-relaxed">
+            Amazing Grace Plaza, by New Extension
+            <br />
             BBA Tradefair Lagos–Badagry Expressway
           </p>
-         </div>
+        </div>
       </div>
 
-      {/* Divider */ }
-      <div className="border border-gray-500 max-w-7xl mt-5"/>
+      {/* Divider */}
+      <div className="border-t border-gray-500 mt-8" />
 
-      {/* Bottom Section */ }
-      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-[#FFFFFF">
-               <p>© 2023 Cassidy Energy. All rights reserved</p>
-                <a href="#" className="mt-2 md:mt-0 hover:underline">
-                    Terms & conditions
-                </a>
+      {/* Bottom Section */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
+        <p>© 2023 Cassidy Energy. All rights reserved</p>
+        <Link to="#" className="mt-2 md:mt-0 hover:underline">
+          Terms & conditions
+        </Link>
       </div>
     </footer>
+  );
+};
 
-  )
-}
-
-export default Footer
+export default Footer;

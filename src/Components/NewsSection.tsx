@@ -34,25 +34,54 @@ const news: NewsItem[] = [
 ];
 
 const NewsSection = () => {
-  return (
-     <section className="px-8 py-16 max-w-7xl mx-auto">
-      <div className="flex items-center gap-5 mb-4  justify-around">
-         <h2 className="text-2xl  md:text-3xl font-bold mb-10">Read Our News</h2>
-        <div className="border-0.5 w-200  h-0.5  text-[#E5E5E5]  mb-9 bg-[#E5E5E5]"></div>
+    return (
+    <section className="px-8 py-16 max-w-7xl mx-auto">
+      {/* Header */}
+      <div className="flex items-center gap-0 mb-4 justify-around">
+        <h2 className="text-2xl md:text-3xl font-bold mb-10">Read Our News</h2>
+        <div className="border-0.5 w-55 md:w-200 h-0.5 text-[#E5E5E5] mb-9 bg-[#E5E5E5]"></div>
       </div>
-       
 
-      {/* News Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      {/* Mobile View: Horizontal Scroll with Peek Effect */}
+      <div
+        className="
+          flex space-x-4 overflow-x-auto snap-x snap-mandatory
+          [-ms-overflow-style:none] [scrollbar-width:none]
+          [&::-webkit-scrollbar]:hidden
+          md:hidden
+        "
+      >
         {news.map((item, index) => (
           <div
             key={index}
-            className="bg-white  overflow-hidden hover:shadow-lg transition"
+            className="flex-shrink-0 w-80 snap-start bg-white rounded-lg shadow-md overflow-hidden"
           >
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-45 rounded-lg object-cover"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="font-semibold text-base mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-sm line-clamp-3">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop View: Grid */}
+      <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {news.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition"
+          >
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
@@ -62,7 +91,7 @@ const NewsSection = () => {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default NewsSection
+export default NewsSection;
