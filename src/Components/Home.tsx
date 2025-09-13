@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { BannerA, BannerB, BannerC, FrameP, blueBottle, MechA, MechB, MechC } from "../assets";
+import { BannerA, BannerB, BannerC, FrameP, blueBottle } from "../assets";
 import NewsSection from "./NewsSection";
+import EngineCare from "./EngineCare";
 
 
 type Slide = {
@@ -13,7 +14,7 @@ type Slide = {
 const slide: Slide[] = [
   {
     image: BannerA,
-    text: "Ensuring Optimal Engine Protection and Performance",
+    text: "Ensuring Optimal Engine  Protection and Performance",
   },
   {
     image: BannerB,
@@ -33,7 +34,7 @@ const Home = () => {
 
   return (
     <div className="w-full">
-      <section className="relative w-full h-[80vh] overflow-hidden">
+      <section className="relative w-full h-[80vh] overflow-hidden ">
         {/* Slide container */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -53,7 +54,7 @@ const Home = () => {
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
-                className="text-3xl md:text-5xl font-bold"
+                className="text-3xl break-normal text-shadow-2xs md:text-5xl font-bold "
               >
                 {slide[current].text}
               </motion.h1>
@@ -74,35 +75,31 @@ const Home = () => {
         </div>
       </section>
       {/* About Us Section */}
-      <section className="grid md:grid-cols-2 gap-10 items-center px-8 py-16 max-w-6xl mx-auto">
+      <section className="grid md:grid-cols-2 gap-10 items-center px-8 py-16 max-w-6xl mx-auto ">
         {/* Text Content */}
         <div>
           <div className="flex items-center gap-5 mb-4">
-             {/* Decorative line and subtitle */}
-             <div className="border w-15  mb-2 h-0.5 text-primary bg-primary"></div>
-          <p className="uppercase text-navgrey tracking-wide font-semibold mb-2">
-            Know About Us
-          </p>
+              <div className="border w-15 h-0.5  text-primary  mb-2 bg-primary"></div>
+              <p className="uppercase text-navgrey md:text-black font-semibold mb-2 tracking-wide">
+                Know abaout Us
+              </p>
           </div>
           <div className="ml-20">
              <h2 className="text-3xl md:text-4xl font-bold mb-4">
             At Cassidy Energy, we&apos;re passionate about engines
           </h2>
-          <p className="text-gray-600 mb-6 w-[600px] leading-relaxed">
+          <p className="text-gray-600 mb-4 text-left max-w-[600px] leading-relaxed">
             With years of experience in the industry, we understand the
             importance of using high-quality oil to protect and enhance engine
             performance. That’s why we’re dedicated to producing the finest
             engine oils on the market.
           </p>
           <Link to="/about-us">
-          <button className="px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
+          <button className="px-6 py-5 md:px-6 md:py-3  w-full md:w-[133px]  bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
             Learn more
           </button>
           </Link>
           </div>
-          
-          
-         
         </div>
         {/* Image Content */}
         <div className="flex-1 ml-10">
@@ -120,7 +117,7 @@ const Home = () => {
         <div>
           <div className="flex items-center gap-5 mb-4">
               <div className="border w-15 h-0.5  text-primary  mb-2 bg-primary"></div>
-              <p className="uppercase text-black font-semibold mb-2 tracking-wide">
+              <p className="uppercase text-black font-semibold mb-2  tracking-wide">
                 What We Do
               </p>
           </div>
@@ -128,20 +125,21 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Our Range of Products
           </h2>
-          <p className="text-gray-600 mb-6 w-[600px]  leading-relaxed">
+          <p className="text-gray-600 mb-6 max-w-[600px]  leading-relaxed">
             At Cassidy Energy, we offer a wide range of high-quality engine oils
             to suit all types of vehicles. Whether you&apos;re driving a daily
             car, riding a motorcycle, or operating heavy machinery, we have the
             right oil for you. Our products are designed to meet the specific
             needs of each application, ensuring maximum performance and
-            protection.
+            protection. From conventional to synthetic oils, Cassidy energy has got you covered.
           </p>
 
           {/* Product list */}
-          <ul className="space-y-10">
+          <ul className="space-y-10 w-full">
             <li>
-               <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
-              <span className="font-extrabold ml-4.5">
+               <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm " />
+               
+              <span className="font-extrabold md:ml-4.5 ml-4 ">
                 CASSTEK PREMIUM 4T 20W-40 API SL/MA2
               </span>{" "}
               <p className="text-gray-600 text-sm ml-9 ">
@@ -149,7 +147,7 @@ const Home = () => {
               </p>
             </li>
             <li>
-             <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+             <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm " />
               <span className="font-extrabold ml-4.5">
                 CASSTEK MOTO 4T 20W-40 API SF/CF
               </span>{" "}
@@ -158,7 +156,7 @@ const Home = () => {
               </p>
             </li>
             <li>
-              <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+              <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm " />
               <span className="font-extrabold ml-4.5">
                 CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF
               </span>{" "}
@@ -167,7 +165,7 @@ const Home = () => {
               </p>
             </li>
             <li>
-              <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
+              <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm " />
               <span className="font-extrabold ml-4.5">
                 CASSGOLD POWER MOTOR OIL SAE40 API SF/CF
               </span>{" "}
@@ -179,16 +177,16 @@ const Home = () => {
 
           {/* CTA Button */}
           <Link to="/lubricants">
-            <button className="mt-15 px-6 py-3 bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
-              See lubricants
-            </button>
+            <button className=" w-full px-6 py-5 mt-10 md:px-6 md:py-3   md:w-[180px]  bg-primary text-white font-semibold rounded-md shadow hover:bg-orange-600 transition">
+            See Lubricant
+          </button>
           </Link>
         </div>
         </div>
           
 
         {/* Images */}
-        <div className="flex justify-center mt-45 ml-10">
+        <div className="flex justify-center md:mt-45 ml-10 ">
           <img
             src={FrameP}
             alt="Cassidy Oil Products"
@@ -197,40 +195,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Engine Protection Section */}
-      <section className="px-8 py-16 max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Protect Your Engine with <br />
-          Cassidy standard oil
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-          Whether you&apos;re a seasoned mechanic or a casual car enthusiast, we
-          have the knowledge and expertise to help you get the most out of your
-          engine.
-        </p>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <img
-            src={MechB}
-            alt="Mechanic working"
-            className="rounded-md shadow-md object-cover"
-          />
-          <img
-            src={MechA}
-            alt="Mechanic explaining"
-            className="rounded-md shadow-md object-cover"
-          />
-          <img
-            src={MechC}
-            alt="Oil product by car"
-            className="rounded-md shadow-md object-cover"
-          />
-        </div>
-      </section>
+{/* Engine Protection Section */}
+   <EngineCare/>
 
       {/* Subscription Section */}
-    <section className=" text-white py-16 px-6 rounded-lg bg-cover w-[1110px] mx-10 mb-10 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
+    <section className=" text-white py-16 px-6  md:rounded-lg bg-cover  md:mx-10 mb-10 bg-center" style={{ backgroundImage: `url(/assets/subscribe-image.png)` }}>
         <div className="max-w-3xl mx-auto text-center ">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Subscribe to get <br/> the latest updates

@@ -1,4 +1,5 @@
 import Group from "../assets/Group.svg";
+import {MenuOpen, MenuClose } from "../assets";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
        {/* Logo */}
       <Link to="/">
-        <img src={Group} alt="Cassidy Energy" className="h-12 w-auto" />
+        <img src={Group} alt="Cassidy Energy" className="h-12 w-auto ml-5 sm:ml-0 md:ml-10" />
       </Link>
 
         {/* Desktop Menu */}
@@ -60,48 +61,51 @@ const Navbar = () => {
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
-          {menuOpen ? <p>X</p> : <p>Menu</p>}
+          {menuOpen ?(
+           <img src={MenuClose} alt="Close menu"  className="w-6 h-6"></img>
+            ): (
+            <img src={MenuOpen} alt="Open menu" className="w-6 h-6"></img>)}
         </button>
       </div>
-
+ 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 px-8 py-4">
           <ul className="space-y-4 text-base">
             <li>
-              <Link
+              <NavLink
                 to="/"
-                className="text-[#002b36] font-bold hover:text-[#002b36]"
+                 className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
 
             <li>
-              <Link
+              <NavLink
                 to="/about-us"
-                className="text-[#002b36] font-bold hover:text-[#002b36]"
+                className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
               >
                 About Us
-              </Link>
+              </NavLink>
             </li>
 
             <li>
-              <Link
+              <NavLink
                 to="/lubricants"
-                className="text-[#002b36] font-bold hover:text-[#002b36]"
+                 className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
               >
                 Lubricants
-              </Link>
+              </NavLink>
             </li>
 
             <li>
-              <Link
+              <NavLink
                 to="/contact"
-                className="text-[#002b36] font-bold hover:text-[#002b36]"
+                 className={({isActive})=> isActive ? "text-secondary font-bold " :  "text-navgrey font-semibold hover:text-[#002b36] "}
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

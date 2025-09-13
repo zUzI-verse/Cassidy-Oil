@@ -132,7 +132,7 @@ const About = () => {
      
       </section>
       {/* Subscription Section */}
-      <section className=" text-white py-16 px-6 rounded-lg bg-cover w-[1110px]  mx-10 mb-10 bg-center" style={{ backgroundImage: `url(/assets/subscribe-img.png)` }}>
+      <section className=" text-white py-16 px-6 rounded-lg bg-cover w-[1110px]  mx-10 mb-10 bg-center" style={{ backgroundImage: `url(/assets/subscribe-image.png)` }}>
         <div className="max-w-3xl mx-auto text-center ">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Subscribe to get <br/> the latest updates
