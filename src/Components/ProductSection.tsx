@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import FrameP from "../assets/frameP.png"; // adjust to actual image path
+import FrameP from "../assets/frameP.png"; 
 
 // Type for heading and description blocks
 type SectionContent = {
