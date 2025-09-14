@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#152C41] text-white py-10">
+    <footer className="bg-[#152C41] text-white py-10 w-full overflow-hidden">
       {/* MOBILE LAYOUT */}
-      <div className="md:hidden max-w-7xl mx-auto px-6 ml-10 mb-20">
+      <div className="md:hidden md:ml-10 max-w-7xl mx-auto px-6  mb-20">
         {/* Logo */}
         <div>
           <Link to="/">
@@ -149,7 +149,7 @@ const Footer = () => {
       <div className="border-t border-gray-500 mt-8" />
 
       {/* Bottom Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row items-left justify-between text-sm text-gray-300 ml-9">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 md:ml-9 py-4 flex flex-col md:flex-row items-left justify-between text-sm text-gray-300 ">
         <p>© 2023 Cassidy Energy. All rights reserved</p>
         <Link to="#" className="mt-5 md:mt-0 hover:underline">
           Terms & conditions
