@@ -68,7 +68,7 @@ const ProductSection = () => {
             {products.map((item, idx) => (
               <li key={idx}>
                 <div className="flex items-start gap-3">
-                  <div className="w-4.5 h-4.5 bg-primary rounded-sm mt-1" /> 
+                   <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
                   <div>
                     <span className="font-extrabold">{item.title}</span>
                     <p className="text-gray-600 text-sm">{item.description}</p>

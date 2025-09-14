@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#152C41] text-white py-10">
       {/* MOBILE LAYOUT */}
-      <div className="md:hidden max-w-7xl mx-auto px-6">
+      <div className="md:hidden max-w-7xl mx-auto px-6 ml-10 mb-20">
         {/* Logo */}
         <div>
           <Link to="/">
@@ -14,23 +14,23 @@ const Footer = () => {
         </div>
 
         {/* Company + Connect side-by-side */}
-        <div className="flex items-start justify-between gap-8">
+        <div className="flex items-start justify-between gap-58">
           {/* Company */}
           <div className="flex-1 min-w-[9rem]">
-            <h3 className="font-bold mb-3">Company</h3>
+            <h3 className="font-bold mb-10">Company</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>
-                <Link to="/about-us" className="hover:underline">
+              <li className="mb-10">
+                <Link to="/about-us" className="hover:underline ">
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link to="/lubricants" className="hover:underline">
+              <li className="mb-10">
+                <Link to="/lubricants" className="hover:underline ">
                   Lubricants
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="hover:underline">
+              <li className="mb-10">
+                <Link to="/contact" className="hover:underline ">
                   Contact
                 </Link>
               </li>
@@ -39,25 +39,25 @@ const Footer = () => {
 
           {/* Connect */}
           <div className="flex-1 min-w-[9rem]">
-            <h3 className="font-bold mb-3">Connect</h3>
+            <h3 className="font-bold mb-10">Connect</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>
-                <Link to="#" className="hover:underline">
+              <li className="mb-10">
+                <Link to="#" className="hover:underline ">
                   Facebook
                 </Link>
               </li>
-              <li>
-                <Link to="#" className="hover:underline">
+              <li className="mb-10">
+                <Link to="#" className="hover:underline ">
                   Instagram
                 </Link>
               </li>
-              <li>
-                <Link to="#" className="hover:underline">
+              <li  className="mb-7">
+                <Link to="#" className="hover:underline ">
                   Twitter
                 </Link>
               </li>
-              <li>
-                <Link to="#" className="hover:underline">
+              <li className="mb-10">
+                <Link to="#" className="hover:underline ">
                   LinkedIn
                 </Link>
               </li>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* Find Us centered beneath */}
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-left ">
           <h3 className="font-bold mb-3">Find Us</h3>
           <p className="text-sm text-gray-300 leading-relaxed">
             Amazing Grace Plaza, by New Extension
@@ -87,19 +87,19 @@ const Footer = () => {
 
         {/* Company */}
         <div>
-          <h3 className="font-bold mb-4">Company</h3>
+          <h3 className="font-bold mb-7">Company</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>
+            <li className="mb-7">
               <Link to="/about-us" className="hover:underline">
                 About Us
               </Link>
             </li>
-            <li>
+            <li className="mb-7">
               <Link to="/lubricants" className="hover:underline">
                 Lubricants
               </Link>
             </li>
-            <li>
+            <li className="mb-7">
               <Link to="/contact" className="hover:underline">
                 Contact
               </Link>
@@ -109,24 +109,24 @@ const Footer = () => {
 
         {/* Connect */}
         <div>
-          <h3 className="font-bold mb-4">Connect</h3>
+          <h3 className="font-bold mb-7">Connect</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>
+            <li className="mb-7">
               <Link to="#" className="hover:underline">
                 Facebook
               </Link>
             </li>
-            <li>
+            <li className="mb-7">
               <Link to="#" className="hover:underline">
                 Instagram
               </Link>
             </li>
-            <li>
+            <li className="mb-7">
               <Link to="#" className="hover:underline">
                 Twitter
               </Link>
             </li>
-            <li>
+            <li className="mb-7">
               <Link to="#" className="hover:underline">
                 LinkedIn
               </Link>
@@ -135,9 +135,9 @@ const Footer = () => {
         </div>
 
         {/* Find Us */}
-        <div>
-          <h3 className="font-bold mb-4">Find Us</h3>
-          <p className="text-sm text-gray-300 leading-relaxed">
+        <div >
+          <h3 className="font-bold mb-5">Find Us</h3>
+          <p className="text-sm text-gray-300 leading-relaxed ">
             Amazing Grace Plaza, by New Extension
             <br />
             BBA Tradefair Lagos–Badagry Expressway
@@ -149,9 +149,9 @@ const Footer = () => {
       <div className="border-t border-gray-500 mt-8" />
 
       {/* Bottom Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row items-left justify-between text-sm text-gray-300 ml-9">
         <p>© 2023 Cassidy Energy. All rights reserved</p>
-        <Link to="#" className="mt-2 md:mt-0 hover:underline">
+        <Link to="#" className="mt-5 md:mt-0 hover:underline">
           Terms & conditions
         </Link>
       </div>

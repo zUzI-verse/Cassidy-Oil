@@ -1,4 +1,5 @@
 import { OilAbout, AboutBottle } from "../assets";
+import Subscription from "./Subscription";
 
 const About = () => {
   return (
@@ -149,31 +150,7 @@ const About = () => {
         </div>
       </section>
       {/* Subscription Section */}
-      <section
-        className=" text-white py-16 px-6 rounded-lg bg-cover md:w-[1110px]  mx-10 mb-10 bg-center"
-        style={{ backgroundImage: `url(/assets/subscribe-image.png)` }}
-      >
-        <div className="max-w-3xl mx-auto text-center ">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Subscribe to get <br /> the latest updates
-          </h3>
-          <form className="flex flex-col sm:flex-col mx-auto  justify-center gap-4 mt-6 w-2/3">
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 min-w-[250px] px-4 py-5 rounded-md border-1 text-white bg-secondary focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="px-6 py-5 bg-primaryb font-semibold rounded-sm shadow hover:bg-orange-400 text-[#152C41] transition"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
+     <Subscription/>
     </div>
   );
 };
