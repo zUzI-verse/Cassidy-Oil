@@ -88,11 +88,11 @@ const ProductSection = () => {
       </div>
 
       {/* Image */}
-      <div className="flex justify-center md:mt-20 ml-0 md:ml-10">
+      <div className="flex justify-center md:mt-60 ml-0 md:ml-10">
         <img
           src={FrameP}
           alt="Cassidy Oil Products"
-          className="w-full max-w-[450px] object-contain"
+          className="w-full  object-contain"
         />
       </div>
     </section>

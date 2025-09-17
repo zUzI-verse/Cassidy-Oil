@@ -8,7 +8,7 @@ const About = () => {
         {/* Top section */}
         <div className="max-w-6xl mx-auto">
           {/* Orange line + small heading */}
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-6 ml-15 md:ml-0">
             <span className="w-12 h-0.5 bg-primary"></span>
             <span className="tracking-widest text-gray-500 text-sm uppercase">
               Know About Us
@@ -42,13 +42,13 @@ const About = () => {
             className="rounded-lg shadow-md w-full mb-15  object-cover md:w-[1166px] "
           />
         </div>
-        <div className="flex items-center gap-5 mb-4 ml-39 md:ml-10">
+        <div className="flex items-center gap-5 mb-6 ml-20 md:ml-20">
           <div className="border w-15 h-0.5  text-primary  mb-2 bg-primary"></div>
           <p className="uppercase text-black font-semibold mb-2 tracking-wide">
             OUR CORE BUSINESS
           </p>
         </div>
-        <div className=" ml-20 px-20">
+        <div className=" md:ml-20 px-20 ">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Built on 3 fundamental pillars
           </h2>
@@ -58,7 +58,7 @@ const About = () => {
             <li>
               <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
               <span className="font-extrabold ml-4.5">Base Oils</span>{" "}
-              <p className="text-gray-600 text-sm mx-10">
+              <p className="text-gray-600 text-sm ">
                 The Foundation of Performance We supply a wide range of
                 high-quality base oils—Group I,II, II+, III, and niche
                 specialties—that serve as the essential building blocks for
@@ -74,7 +74,7 @@ const About = () => {
               <span className="font-extrabold ml-4.5">
                 Performance-Enhancing Additives
               </span>{" "}
-              <p className="text-gray-600 text-sm mx-10">
+              <p className="text-gray-600 text-sm ">
                 The true art of lubrication lies in the additive package.Cassidy
                 Energy offers a comprehensive suite of advanced additive
                 components and formulated packages engineered to meet the
@@ -88,7 +88,7 @@ const About = () => {
             <li>
               <div className="w-4.5 h-4.5 inline-block bg-primary rounded-sm shrink-0" />
               <span className="font-extrabold ml-4.5">Finished Lubricants</span>{" "}
-              <p className="text-gray-600 text-sm mx-10">
+              <p className="text-gray-600 text-sm">
                 3. Ready-to-Use Excellence For clients seeking complete,
                 market-ready solutions, we provide a full line of premium
                 finished lubricants. Our products encompass industrial hydraulic

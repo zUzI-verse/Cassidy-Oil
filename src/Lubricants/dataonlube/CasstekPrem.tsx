@@ -109,12 +109,14 @@ const CasstekPrem = () => {
           <section className="mt-6">
             <h2 className="text-xl font-semibold mb-2">STORAGE</h2>
             <p className="text-gray-700">{product.storage}</p>
-            <a
-              href="#"
-              className="text-red-600 font-semibold flex items-center mt-2"
-            >
-              📥 {product.pdfLink}
-            </a>
+             <Link
+                to={product.pdfLink}
+                target="_blank"
+                download
+                className="text-red-600 font-semibold flex items-center mt-2"
+              >
+                📥 Click here to download PDF
+            </Link>
           </section>
         </div>
 

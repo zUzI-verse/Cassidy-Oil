@@ -86,11 +86,11 @@ const Home = () => {
                 Know abaout Us
               </p>
           </div>
-          <div className="ml-20">
+          <div className="ml-6 md:ml-20">
              <h2 className="text-3xl md:text-4xl font-bold mb-4">
             At Cassidy Energy, we&apos;re passionate about engines
           </h2>
-          <p className="text-gray-600 mb-4 text-left max-w-[600px] leading-relaxed">
+          <p className="text-gray-600 mb-10 text-left max-w-[600px] leading-relaxed">
             With years of experience in the industry, we understand the
             importance of using high-quality oil to protect and enhance engine
             performance. That’s why we’re dedicated to producing the finest
