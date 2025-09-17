@@ -11,7 +11,7 @@ const EngineCare: React.FC = () => {
         Protect Your Engine with <br />
         Cassidy standard oil
       </h2>
-      <p className="text-gray-600 max-w-2xl mx-auto w-[390px] mb-10 md:w-full">
+      <p className="text-gray-600 max-w-2xl mx-auto w-full mb-10 md:w-full">
         Whether you&apos;re a seasoned mechanic or a casual car enthusiast, we
         have the knowledge and expertise to help you get the most out of your
         engine.
