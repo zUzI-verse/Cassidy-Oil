@@ -109,7 +109,7 @@ const BikeOil = () => {
                 />
                 <div className="p-4">
                   <h3 className="font-semibold w-[191px] h-[38px] mb-5 ">{product.name}</h3>
-                  <p className="text-black text-sm my-3  w-[227px] h-[46px]">{product.description}</p>
+                  <p className="text-black text-sm mt-5  w-[227px] h-[46px]">{product.description}</p>
                   <Link
                     to={`/lubricants/dataonlube/casstek-premium/${product.id}`}
                   >

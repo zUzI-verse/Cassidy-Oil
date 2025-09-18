@@ -77,7 +77,7 @@ const AllLubricants = () => {
           </aside>
 
           {/* Product List */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {filteredProducts.map((product: Product) => (
               <div key={product.id} className="bg-white p-4 rounded-lg flex flex-col">
                 <img
@@ -87,7 +87,7 @@ const AllLubricants = () => {
                 />
                 <div className="ml-9">
                   <h3 className="font-medium w-[191px] h-[38px] mb-10">{product.name}</h3>
-                  <p className=" text-sm my-3 w-[227px] h-[46px] flex-grow ">{product.description}</p>
+                  <p className=" text-sm my-3 w-[191px] h-[46px]  ">{product.description}</p>
                   {!product.noButton && (
                    <Link 
                    to={`/lubricants/dataonlube/casstek-premium/${product.id}`}

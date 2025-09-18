@@ -112,22 +112,22 @@ const Footer = () => {
           <h3 className="font-bold mb-7">Connect</h3>
           <ul className="space-y-2 text-sm text-gray-300">
             <li className="mb-7">
-              <Link to="#" className="hover:underline">
+              <Link to="https://web.facebook.com/?_rdc=1&_rdr#" className="hover:underline">
                 Facebook
               </Link>
             </li>
             <li className="mb-7">
-              <Link to="#" className="hover:underline">
+              <Link to="https://www.instagram.com/" className="hover:underline">
                 Instagram
               </Link>
             </li>
             <li className="mb-7">
-              <Link to="#" className="hover:underline">
+              <Link to="https://x.com/" className="hover:underline">
                 Twitter
               </Link>
             </li>
             <li className="mb-7">
-              <Link to="#" className="hover:underline">
+              <Link to="https://api.linkedin.com/login" className="hover:underline">
                 LinkedIn
               </Link>
             </li>
