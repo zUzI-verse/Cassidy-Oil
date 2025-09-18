@@ -37,12 +37,13 @@ type Product = {
   benefits: string;
   storage: string;
   pdfLink: string;
+  pdfLinkName:string;
 };
 
 const products: Product[] = [
   {
     id: 1,
-    name: "CASSTEK PREMIUM 4T 20W-40 Api SL/MA2",
+    name: "CASSTEK PREMIUM 4T 20W-40 API SL/MA2",
     description: " Premium Multigrade Okada, Kekenapep engine oil ",
     image: FrameF,
     // isPremium: true,
@@ -56,7 +57,8 @@ const products: Product[] = [
     applications: "CASSTEK PREMIUM 4T 20W-40 API SL/MA2 can be used in all 4-stroke motorbike engines manufactured by leading global OEMs. OEM recommended drain interval is to be followed.",
     benefits: "Enhanced protection of engine parts at the point of engine start up. Reduced propensity of sludge deposits which ensures superior engine cleanliness during normal operation. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Reduced Disc wear and Valve Train wear. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTEK_PREMIUM_4T_20W-40_API_SL-MA2.pdf",
+    pdfLinkName:"CASSTEK PREMIUM 4T 20W-40 API SL/MA2.pdf"
   },
   {
     id: 2,
@@ -74,7 +76,8 @@ const products: Product[] = [
     applications: "CASSTEK MOTO 4T 20W-40 API SF/CF can be used in all 4-stroke motorbike engines manufactured by leading global OEMs. It can also be used in light commercial vehicles and 3 Wheelers under OEM’s recommended oil drain intervals.",
     benefits: "Resistance to oil oxidation and thermal degradation thereby increasing oil life. Enhanced engine life and protects engine parts at the point of engine start up. Increased engine cleanliness by using advanced detergent- dispersant additive technology. Multigrade performance advantage which allows excellent oil performance in wide operating temperature Excellent corrosion protection, even when engine is off. Provides excellent protection in prolonged city stop-and-go driving conditions.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTEK_MOTO_4T_20W-40_API_SF-CF.pdf",
+    pdfLinkName:"CASSTEK MOTO 4T 20W-40 API SF/CF.pdf"
   },
   {
     id: 3,
@@ -90,7 +93,8 @@ const products: Product[] = [
     applications: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF can be used in earlier generation passenger cars, SUVs, MUVs, light and heavy commercial vehicles running with petrol or CNG as their fuel source. OEM recommended drain interval is to be followed.",
     benefits: "Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_SUPER_MOTOR_OIL_20W-50_API_SL-CF.pdf",
+    pdfLinkName:"CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF.pdf"
   },
   {
     id: 4,
@@ -104,7 +108,8 @@ const products: Product[] = [
     applications: "CASSGOLD POWER MOTOR OIL SAE40 API SF/CF can be used in personal vehicles, light and heavy-duty commercial vehicles. OEM’s recommended oil drain intervals are to be followed.",
     benefits: "Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_POWER_MOTOR_OIL_SAE40_API_SF-CF.pdf",
+    pdfLinkName:"CASSGOLD POWER MOTOR OIL SAE40 API SF/CF.pdf"
   },
   {
     id: 5,
@@ -119,7 +124,8 @@ const products: Product[] = [
     applications: "CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4 can be used in earlier generation passenger cars, fleet cars, SUVs, MUVs, light and heavy commercial vehicles running with petrol or diesel as their fuel source. OEM recommended drain interval is to be followed.",
     benefits: "Excellent results in high temperature sludge reduction to ensure engine cleanliness. Remarkable resistance to engine wear is normal and adverse operating condition. Reduced propensity of aeration thereby reducing the formation of foams at high engine rotation speed which in turn ensures lubrication to critical engine parts. Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C  or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_PASSENGER_MOTOR_OIL_20W-50_API_SG-CF-4.pdf",
+    pdfLinkName:"CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4.pdf"
   },
   {
     id: 6,
@@ -134,7 +140,8 @@ const products: Product[] = [
     applications: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source. OEM recommended drain interval is to be followed.",
     benefits: "Resistance to oil oxidation and thermal degradation thereby increasing oil life. Enhanced engine life and protects engine parts at the point of engine start up. Increased engine cleanliness by using advanced detergent- dispersant additive technology. Excellent corrosion protection, even when engine is off.. Provides excellent protection in prolonged city stop-and-go driving conditions.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_ADVANCED_FULLY_SYNTHETIC_MOTOR_OIL_5W-40_API_SN-CF.pdf",
+    pdfLinkName:"CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF.pdf"
   },
   {
     id: 7,
@@ -149,12 +156,12 @@ const products: Product[] = [
     applications: "CASSTURBO HD SAE40 API CF/SF has been produced to meet with engine test requirements of diesel passenger cars, large and small commercial vehicles, multi-utility vehicles, gensets etc. OEM recommended drain interval must be followed.",
     benefits: "Low ash additive package, along with highly refined quality base oil provides superior engine oil formulation and oil performance. Increased piston and crankcase cleanliness as the oil is formulated to reduce deposit built up. Excellent corrosion protection, even when engine is off. Provides excellent protection in prolonged city stop-and-go driving conditions Resistance to oil oxidation and thermal degradation thereby increasing oil life. Excellent application on indirect injected heavy-duty generators. Applicable for use in hydraulic and transmission system that specifies the use of SAE40 monograde engine oil. Off highway application suitable for use in agricultural, mining, logging, construction and other machinery where use of SAE40 oil is specified.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTURBO_HD_SAE40_API_CF-SF.pdf",
+    pdfLinkName:"CASSTURBO HD SAE40 API CF/SF.pdf"
   },
   {
     id: 8,
-
-name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
+    name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     description:
       "Fleet multigrade diesel engine oil designed to provide superior performance for trucks",
     image: FrameK,
@@ -165,7 +172,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSTURBO HD PLUS 15W40 CF-4/SG can be used in passenger cars, light and heavy commercial cars, Sports Utility Vehicles, Multi-Utility Vehicles, generators, 3 wheelers and other vehicles which uses diesel as the primary fuel source. OEM recommended drain interval is to be followed.",
     benefits: "Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTURBO_HD_PLUS_15W40_CF-4-SG.pdf",
+    pdfLinkName:"CASSTURBO HD PLUS 15W40 CF-4/SG.pdf"
 
   },
   {
@@ -181,7 +189,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSTURBO HD ULTRA 15W40 CI-4 can be used in light and heavy commercial cars, Sports Utility Vehicles, Multi-Utility Vehicles, generators, and other vehicles used in truck fleet, mining, construction, quarrying, agriculture etc. that use diesel as the primary fuel source. OEM recommended oil drain interval is to be followed.",
     benefits: "Compatibility with catalytic convertors and other exhaust system parts. Reduced maintenance and operating costs as the oil offers maximum engine protection under normal operating conditions. Excellent Anti-Wear property that provides protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life Reduced propensity of sludge deposits which ensures superior engine cleanliness during normal operation. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTURBO_HD_ULTRA_15W40_CI-4.pdf",
+    pdfLinkName:"CASSTURBO HD ULTRA 15W40 CI-4.pdf"
   },
   {
     id: 10,
@@ -196,7 +205,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSTURBO HD FORCE 15W40 CH-4 can be used in light and heavy commercial cars, Sports Utility Vehicles, Multi-Utility Vehicles, generators, and other vehicles used in truck fleet, mining, construction, quarrying, agriculture etc. that use diesel as the primary fuel source. OEM recommended oil drain interval is to be followed.",
     benefits: "Compatibility with catalytic convertors and other exhaust system parts. Reduced maintenance and operating costs as the oil offers maximum engine protection under normal operating conditions. Excellent Anti-Wear property that provides protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Reduced propensity of sludge deposits which ensures superior engine cleanliness during normal operation. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTURBO_HD_FORCE_15W40_CH-4.pdf",
+    pdfLinkName:"CASSTURBO HD FORCE 15W40 CH-4.pdf"
   },
   {
     id: 11,
@@ -211,7 +221,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSTRANS DEX D2 ATF DEXRON IID is recommended to be used in the automatic transmission of most passenger cars, commercial vehicles, light trucks and public transport buses. It can also be used in most power steering systems and general-purpose hydraulic systems. OEM recommended drain interval is to be followed.",
     benefits: "Excellent low temperature fluidity which provides high performance in hydraulic system, smooth gear shift from cold start to maximum operating temperatures. Oxidation resistance provides higher oil operating life. Use of high quality additives and friction modifiers ensures best gear shift feel properties. Reduced propensity towards formation of deposits inside the gear case which improves the performance of delicate control valves. Effective seal compatibility which reduces the chances of leaks",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTRANS_DEX_D2_ATF_DEXRON_IID.pdf",
+    pdfLinkName:"CASSTRANS DEX D2 ATF DEXRON IID.pdf"
   },
   {
     id: 12,
@@ -226,7 +237,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM is recommended to be used in the automatic transmission of most passenger cars, commercial vehicles, light trucks and public transport buses. It can also be used in most power steering systems and general-purpose hydraulic systems. OEM recommended drain interval is to be followed.",
     benefits: "Excellent low temperature fluidity which provides high performance in hydraulic system, smooth gear shift from cold start to maximum operating temperatures. Oxidation resistance provides higher oil operating life. Use of high-quality additives and friction modifiers ensures best gear shift feel properties. Reduced propensity towards formation of deposits inside the gear case which improves the performance of delicate control valves. Effective seal compatibility which reduces the chances of leaks.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSTRANS_DEX_H3_ATF_DEXRON_IIIH-IIIM.pdf",
+    pdfLinkName:"CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM.pdf"
   },
   {
     id: 13,
@@ -247,7 +259,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source for enhanced fuel economy with higher power output. OEM recommended drain interval is to be followed. This oil meets API SN specification which ensures that this oil offers industry leading protection against, oil deposits, sludge formation, oil thermal breakdown under many operating conditions and ensures year-round protection.",
     benefits: "Maximises short- and long-term engine performance. Delivers unsurpassed protection across low temperature and other demanding operating conditions. Excellent results in high temperature sludge reduction to ensure engine cleanliness. Remarkable resistance to engine wear is normal and adverse operating condition. Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_ULTRATECH_FULLY_SYNTHETIC_MOTOR_OIL_0W-30_API_SN-CF.pdf",
+    pdfLinkName:"CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-30 API SN/CF.pdf"
   },
   {
     id: 14,
@@ -263,7 +276,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-40 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source for enhanced fuel economy with higher power output. OEM recommended drain interval is to be followed. This oil meets API SN specification which ensures that this oil offers industry leading protection against, oil deposits, sludge formation, oil thermal breakdown under many operating conditions and ensures year-round protection.",
     benefits: "Maximises short- and long-term engine performance. Delivers unsurpassed protection across low temperature and other demanding operating conditions. Excellent results in high temperature sludge reduction to ensure engine cleanliness. Remarkable resistance to engine wear is normal and adverse operating condition. Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_ULTRATECH_FULLY_SYNTHETIC_MOTOR_OIL_0W-40_API_SN-CF.pdf",
+    pdfLinkName:"CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-40 API SN/CF.pdf"
   },
   {
     id: 15,
@@ -278,7 +292,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-30 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source. OEM recommended drain interval is to be followed. This oil meets API SN specification which ensures that this oil offers industry leading protection against, oil deposits, sludge formation, oil thermal breakdown under many operating conditions and ensures year round protection.",
     benefits: "Excellent results in high temperature sludge reduction to ensure engine cleanliness. Remarkable resistance to engine wear is normal and adverse operating condition. Reduced propensity of aeration thereby reducing the formation of foams at high engine rotation speed which in turn ensures lubrication to critical engine parts. Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_ADVANCED_FULLY_SYNTHETIC_MOTOR_OIL_5W-30_API_SN-CF.pdf",
+    pdfLinkName:"CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-30 API SN/CF.pdf"
   },
   {
     id: 16,
@@ -293,7 +308,8 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     applications: "CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source for enhanced fuel economy with higher power output. OEM recommended drain interval is to be followed. This oil meets API SN specification which ensures that this oil offers industry leading protection against, oil deposits, sludge formation, oil thermal breakdown under many operating conditions and ensures year round protection.",
     benefits: "Excellent results in high temperature sludge reduction to ensure engine cleanliness. Remarkable resistance to engine wear is normal and adverse operating condition. Reduced propensity of aeration thereby reducing the formation of foams at high engine rotation speed which in turn ensures lubrication to critical engine parts. Enhanced wear protection to various critical engine parts such as cylinder liner, piston rings, valves, cams etc. which increases engine life. Multigrade oil advantage which protects engine parts at the point of engine start up. Optimal oil performance even at higher engine operating load and temperature. Reduced propensity of oil thickening and oxidation thereby reducing oil consumption under normal operating conditions. Excellent corrosion protection, even when engine is off.",
     storage: "All packages should be stored under cover and should not be stored where ambient temperature exceeds 60°C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside. Follow MSDS for further instructions on storage, safe handling, and disposal of the product.",
-    pdfLink: "Click here to download PDF",
+    pdfLink: "/pdfs/CASSGOLD_ULTRATECH_FULLY_SYNTHETIC_MOTOR_OIL_0W-20_API_SN-CF.pdf",
+    pdfLinkName:"CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN-CF.pdf"
   },
   {
     id: 17,
@@ -308,6 +324,7 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     benefits: "",
     storage: "",
     pdfLink: "",
+    pdfLinkName:""
   },
   {
     id: 18,
@@ -322,6 +339,7 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     benefits: "",
     storage: "",
     pdfLink: "",
+    pdfLinkName:""
   },
   {
     id: 19,
@@ -336,6 +354,7 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     benefits: "",
     storage: "",
     pdfLink: "",
+    pdfLinkName:""
   },
   {
     id: 20,
@@ -350,6 +369,7 @@ name: "CASSTURBO HD PLUS 15W40 CF-4/SG",
     benefits: "",
     storage: "",
     pdfLink: "",
+    pdfLinkName:""
   },
 ];
 

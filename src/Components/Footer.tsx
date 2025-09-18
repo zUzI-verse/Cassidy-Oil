@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         {/* Company + Connect side-by-side */}
-        <div className="flex items-start justify-between gap-58">
+        <div className="flex  space-y-10">
           {/* Company */}
           <div className="flex-1 min-w-[9rem]">
             <h3 className="font-bold mb-10">Company</h3>
@@ -39,25 +39,25 @@ const Footer = () => {
 
           {/* Connect */}
           <div className="flex-1 min-w-[9rem]">
-            <h3 className="font-bold mb-10">Connect</h3>
+            <h3 className="font-bold mb-10 ml-24">Connect</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li className="mb-10">
-                <Link to="#" className="hover:underline ">
+              <li className="mb-10 ml-24">
+                <Link to="#" className="hover:underline">
                   Facebook
                 </Link>
               </li>
-              <li className="mb-10">
-                <Link to="#" className="hover:underline ">
+              <li className="mb-10 ml-24">
+                <Link to="#" className="hover:underline">
                   Instagram
                 </Link>
               </li>
-              <li  className="mb-7">
-                <Link to="#" className="hover:underline ">
+              <li  className="mb-10 ml-24">
+                <Link to="#" className="hover:underline">
                   Twitter
                 </Link>
               </li>
-              <li className="mb-10">
-                <Link to="#" className="hover:underline ">
+              <li className="mb-10 ml-24">
+                <Link to="#" className="hover:underline">
                   LinkedIn
                 </Link>
               </li>

@@ -112,7 +112,7 @@ const CasstekPrem = () => {
              <Link
                 to={product.pdfLink}
                 target="_blank"
-                download
+                download={product.pdfLinkName}
                 className="text-red-600 font-semibold flex items-center mt-2"
               >
                 📥 Click here to download PDF
