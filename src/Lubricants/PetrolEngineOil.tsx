@@ -162,8 +162,8 @@ const PetrolEngineOil = () => {
                   className="w-full h-56 object-contain"
                 />
                 <div className="ml-9">
-                  <h3 className="font-semibold  w-[199px] h-[38px] mb-10">{product.name}</h3>
-                  <p className="text-gray-600 text-sm w-[227px] h-[46px] mt-3 md:my-0">{product.description}</p>
+                  <h3 className="font-semibold  w-[199px] h-[38px] mb-15">{product.name}</h3>
+                  <p className="text-gray-600 text-sm w-[227px] h-[56px] mt-3">{product.description}</p>
                   <Link
                     to={`/lubricants/dataonlube/casstek-premium/${product.id}`}
                   >

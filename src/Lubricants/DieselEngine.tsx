@@ -59,8 +59,8 @@ const DieselEngine = () => {
       </div>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
-        <div className="flex gap-8">
+      <main className="container mx-auto  px-3 md:px-6 py-12">
+        <div className="flex gap-2 md:gap-8">
           {/* Sidebar */}
           <aside className="w-1/4">
             <ul className="space-y-3">
@@ -113,7 +113,7 @@ const DieselEngine = () => {
           </aside>
 
           {/* Products */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <div
                 key={product.id}
@@ -124,8 +124,8 @@ const DieselEngine = () => {
                   alt={product.name}
                   className="w-full h-50 object-contain"
                 />
-                <div className="p-4 ">
-                  <h3 className="font-semibold text-lg  w-[191px] h-[40px] mb-5">{product.name}</h3>
+                <div className="ml-9">
+                  <h3 className="font-semibold text-lg  w-[191px] h-[40px] mb-7">{product.name}</h3>
                   <div className="flex">
                      <p className="text-black text-sm my-2 flex-wrap w-[227px] h-[50px]">{product.description}</p>
                   </div>

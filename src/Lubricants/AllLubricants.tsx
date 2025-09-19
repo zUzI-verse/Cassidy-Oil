@@ -82,21 +82,20 @@ const AllLubricants = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-46 object-contain "
+                  className="w-full h-50 object-contain "
                 />
                 <div className="ml-9">
-                  <h3 className="font-medium w-[191px] h-[38px] mb-10">{product.name}</h3>
-                  <p className=" text-sm w-[227px] h-[46px]  mt-3  md:my-0">{product.description}</p>
+                  <h3 className="font-medium w-[191px] h-[38px] mb-15">{product.name}</h3>
+                  <p className=" text-sm w-[227px] h-[56px] mt-3">{product.description}</p>
                   {!product.noButton && (
                    <Link 
                    to={`/lubricants/dataonlube/casstek-premium/${product.id}`}
                    >
-                    <div className="mt-4">
+                    <div>
                       <button className=" bg-primary text-white mt-7 px-[35px] py-[11px]  rounded cursor-pointer">
                       See More
                     </button>
-                    </div>
-                    
+                    </div>                   
                     </Link>
                   )}
                 </div>
