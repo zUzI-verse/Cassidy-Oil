@@ -96,8 +96,8 @@ const PetrolEngineOil = () => {
       </div>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
-        <div className="flex gap-8">
+      <main className="container mx-auto px-3 md:px-6 py-12">
+        <div className="flex  gap-2 md:gap-8">
           {/* Sidebar */}
           <aside className="w-1/4">
             <ul className="space-y-3">
@@ -150,7 +150,7 @@ const PetrolEngineOil = () => {
           </aside>
 
           {/* Products */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <div
                 key={product.id}
@@ -161,9 +161,9 @@ const PetrolEngineOil = () => {
                   alt={product.name}
                   className="w-full h-56 object-contain"
                 />
-                <div className="p-4">
+                <div className="ml-9">
                   <h3 className="font-semibold  w-[199px] h-[38px] mb-10">{product.name}</h3>
-                  <p className="text-gray-600 text-sm w-[227px] h-[46px]">{product.description}</p>
+                  <p className="text-gray-600 text-sm w-[227px] h-[46px] mt-3 md:my-0">{product.description}</p>
                   <Link
                     to={`/lubricants/dataonlube/casstek-premium/${product.id}`}
                   >

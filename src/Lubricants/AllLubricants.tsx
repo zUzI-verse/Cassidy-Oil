@@ -52,26 +52,25 @@ const AllLubricants = () => {
       </div>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
-        <div className="flex gap-8">
+      <main className="container mx-auto px-3 md:px-6 py-12">
+        <div className="flex gap-2 md:gap-8">
           {/* Side Bar */}
           <aside className="w-1/4">
             <ul className="space-y-3">
               {categories.map((cat) => (
                <li key={cat.name} className="cursor-pointer">
   <Link
-    to={cat.path}
-    onClick={() => setActiveCategory(cat.name)}
-    className={`font-medium ${
-      activeCategory === cat.name
-        ? "text-orange-500 font-bold" // active state
-        : "text-[#1D2130] hover:text-orange-500" // default + hover
-    }`}
-  >
-    {cat.name}
+      to={cat.path}
+      onClick={() => setActiveCategory(cat.name)}
+      className={`font-medium ${
+        activeCategory === cat.name
+          ? "text-orange-500 font-bold" // active state
+          : "text-[#1D2130] hover:text-orange-500" // default + hover
+      }`}
+      >
+      {cat.name}
   </Link>
 </li>
-
               ))}
             </ul>
           </aside>
@@ -87,13 +86,13 @@ const AllLubricants = () => {
                 />
                 <div className="ml-9">
                   <h3 className="font-medium w-[191px] h-[38px] mb-10">{product.name}</h3>
-                  <p className=" text-sm my-3 w-[191px] h-[46px]  ">{product.description}</p>
+                  <p className=" text-sm w-[227px] h-[46px]  mt-3  md:my-0">{product.description}</p>
                   {!product.noButton && (
                    <Link 
                    to={`/lubricants/dataonlube/casstek-premium/${product.id}`}
                    >
                     <div className="mt-4">
-                      <button className=" bg-primary text-white mt-4  px-[35px] py-[11px]  rounded cursor-pointer">
+                      <button className=" bg-primary text-white mt-7 px-[35px] py-[11px]  rounded cursor-pointer">
                       See More
                     </button>
                     </div>
