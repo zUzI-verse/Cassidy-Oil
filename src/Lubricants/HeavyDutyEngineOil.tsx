@@ -58,7 +58,7 @@ const HeavyDutyEngineOil = () => {
       </div>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto px-3 md:px-6 py-12">
         <div className="flex gap-8">
           {/* Sidebar */}
           <aside className="w-1/4">
@@ -112,7 +112,7 @@ const HeavyDutyEngineOil = () => {
           </aside>
 
           {/* Products */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-3/4">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <div
                 key={product.id}
@@ -121,9 +121,9 @@ const HeavyDutyEngineOil = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-56 object-contain"
+                  className="w-full h-50 object-contain"
                 />
-                <div className="p-4">
+                <div className="ml-9">
                   <h3 className="font-semibold text-lg">{product.name}</h3>
                   <p className="text-gray-600 text-sm">{product.description}</p>
                 </div>
