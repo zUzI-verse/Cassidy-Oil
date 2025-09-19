@@ -125,7 +125,7 @@ const DieselEngine = () => {
                   className="w-full h-50 object-contain"
                 />
                 <div className="ml-9">
-                  <h3 className="font-semibold text-lg  w-[191px] h-[40px] mb-7">{product.name}</h3>
+                  <h3 className="font-semibold text-lg  w-[191px] h-[40px] mb-5">{product.name}</h3>
                   <div className="flex">
                      <p className="text-black text-sm my-2 flex-wrap w-[227px] h-[50px]">{product.description}</p>
                   </div>
@@ -133,7 +133,7 @@ const DieselEngine = () => {
                   <Link
                     to={`/lubricants/dataonlube/casstek-premium/${product.id}`}
                   >
-                    <button className=" bg-primary text-white px-[35px] py-[11px] mt-20 rounded cursor-pointer">
+                    <button className=" bg-primary text-white px-[35px] py-[11px] mt-15 rounded cursor-pointer">
                       See More
                     </button>
                   </Link>
